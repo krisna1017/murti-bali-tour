@@ -1,0 +1,7 @@
+tech stack:
+
+Vue 3
+Tailwind CSS
+Vue Router
+AOS Animation
+SwiperJS
