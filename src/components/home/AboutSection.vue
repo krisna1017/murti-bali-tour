@@ -1,18 +1,18 @@
 <template>
-  <section class="py-20 bg-gray-100">
+  <section class="py-20 bg-white font-poppins">
 
     <!-- Heading -->
-    <div class="max-w-4xl mx-auto text-center px-6">
+    <div class="max-w-4xl mx-auto text-center px-4">
 
-      <p class="text-gray-500 text-lg">
+      <p class="text-gray-500 text-sm">
         Get To Know About
       </p>
 
-      <h2 class="text-4xl md:text-5xl font-bold text-sky-900 mt-2">
+      <h2 class="text-3xl md:text-4xl font-bold text-sky-900 font-sans">
         Murti Bali Tour
       </h2>
 
-      <p class="mt-8 text-gray-700 text-lg leading-relaxed">
+      <p class="mt-8 text-gray-700 text-sm leading-relaxed">
         <span class="font-bold">Bali Murti Tour</span>, we create unforgettable
         journeys across Bali by combining beautiful destinations,
         authentic local culture, and personalized travel experiences.
@@ -24,13 +24,13 @@
     </div>
 
     <!-- Feature Grid -->
-    <div class="max-w-6xl mx-auto px-6 mt-14 grid grid-cols-2 gap-4">
+    <div class="max-w-6xl mx-auto px-4 mt-14 grid grid-cols-2 md:grid-cols-4 gap-2">
 
       <!-- Card -->
       <div
         v-for="feature in features"
         :key="feature.title"
-        class="relative overflow-hidden rounded-2xl group h-56"
+        class="relative overflow-hidden rounded-2xl group h-44"
       >
 
         <!-- Background Image -->
@@ -44,7 +44,7 @@
         <div class="absolute inset-0 bg-black/45"></div>
 
         <!-- Content -->
-        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-2">
 
           <!-- Icon -->
           <component
@@ -53,12 +53,12 @@
           />
 
           <!-- Title -->
-          <h3 class="text-white text-2xl font-semibold">
+          <h3 class="text-white text-[12px] font-semibold">
             {{ feature.title }}
           </h3>
 
           <!-- Description -->
-          <p class="text-white/90 text-sm mt-2 leading-relaxed">
+          <p class="text-white/90 text-[8px] mt-2 leading-relaxed">
             {{ feature.description }}
           </p>
 

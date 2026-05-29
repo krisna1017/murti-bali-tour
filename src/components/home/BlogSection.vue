@@ -1,16 +1,16 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-[#e1f3f9] via-[#e1f3f9] to-white px-4 py-12 font-sans">
+  <div class="min-h-screen bg-linear-to-b from-sky-100 via-[#ffffff] to-white px-4 py-12 font-poppins">
     
     <div class="text-center mb-10">
-      <p class="text-gray-500 font-medium text-sm tracking-wide">
+      <p class="text-gray-500 font-medium text-[12px] tracking-wide">
         Blog & Article
       </p>
-      <h2 class="text-3xl sm:text-4xl font-bold text-[#074e74] mt-1">
+      <h2 class="text-3xl sm:text-4xl font-bold text-[#074e74] mt-1 font-sans">
         Murti Bali Tour Blog
       </h2>
     </div>
 
-    <div class="max-w-xl mx-auto space-y-8">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
       
       <div 
         v-for="(post, index) in blogPosts" 

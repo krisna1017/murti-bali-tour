@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "title": "Day Bali Tours",
+    "slug": "day-bali-tours",
+    "subtitle": "Beauty and culture.",
+    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+    "packages_list": [
+      {
+        "id": 101,
+        "slug": "kintamani-ubud-tour",
+        "name": "Kintamani - Ubud Tour",
+        "rating": "5.0",
+        "price": "IDR 450k",
+        "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        "description": "Perjalanan sehari penuh menjelajahi pemandangan Gunung Batur dan desa seni Ubud."
+      },
+      {
+        "id": 102,
+        "slug": "east-bali-tour",
+        "name": "East Bali Tour",
+        "rating": "5.0",
+        "price": "IDR 600k",
+        "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        "description": "Jelajahi sisi timur Bali yang eksotis termasuk Pura Lempuyang dan Tirta Gangga."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Nusa Penida Tours",
+    "slug": "nusa-penida-tours",
+    "subtitle": "Explore beauty island.",
+    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+    "packages_list":[
+      {
+        "id": 201,
+        "slug": "lembongan-menjangan",
+        "name": "Lembongan - Menjangan Tour",
+        "rating": "5.0",
+        "price": "IDR 300k",
+        "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Activity",
+    "slug": "activity",
+    "subtitle": "Adventure and culture.",
+    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Car Charter",
+    "slug": "car-charter",
+    "subtitle": "Private & flexible travel.",
+    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop"
+  }
+]

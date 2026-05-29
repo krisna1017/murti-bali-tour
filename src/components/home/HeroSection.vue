@@ -1,8 +1,10 @@
 <template>
   <section
-    class="min-h-screen bg-cover bg-center flex items-center justify-center text-white font-poppins"
+    class="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white font-poppins"
+    style="background-image: url('/home/bg-hero.jpeg')"
   >
-    <div class="text-center px-4">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="text-center px-4 z-10">
 
       <p class="text-lg mb-6 uppercase">
         murti bali tour

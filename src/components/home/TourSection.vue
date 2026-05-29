@@ -1,19 +1,19 @@
 <template>
-  <section class="py-20 bg-gray-100">
+  <section class="py-16 bg-white font-poppins">
     
     <!-- Heading -->
     <div class="text-center mb-14">
-      <p class="text-gray-600 text-lg">
+      <p class="text-gray-600 text-sm">
         Wonderful Place For You
       </p>
 
-      <h2 class="text-4xl font-bold text-sky-900 mt-2">
+      <h2 class="text-3xl md:text-4xl font-bold text-sky-900 font-sans">
         Tour Category
       </h2>
     </div>
 
     <!-- Category Grid -->
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
 
       <!-- Item -->
       <div
@@ -26,17 +26,17 @@
           <img
             :src="item.image"
             :alt="item.title"
-            class="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+            class="w-full h-44 object-cover group-hover:scale-110 transition duration-500"
           />
         </div>
 
         <!-- Content -->
         <div class="mt-4">
-          <h3 class="text-2xl font-semibold text-gray-800">
+          <h3 class="text-sm md:text-lg font-semibold text-gray-800 font-sans">
             {{ item.title }}
           </h3>
 
-          <p class="text-gray-500 text-lg mt-1">
+          <p class="text-gray-500 text-[12px] md:text-sm">
             {{ item.description }}
           </p>
         </div>

@@ -3,7 +3,7 @@
 
     <section class="min-h-screen flex items-center justify-center">
       <h1 class="text-5xl font-bold">
-        Packages Page
+        Gallery Page
       </h1>
     </section>
 
