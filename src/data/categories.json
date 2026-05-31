@@ -13,16 +13,31 @@
         "rating": "5.0",
         "price": "IDR 450k",
         "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
-        "description": "Perjalanan sehari penuh menjelajahi pemandangan Gunung Batur dan desa seni Ubud."
+        "description": "The Kintamani–Ubud Tour is a perfect journey to explore Bali’s natural beauty, cultural heritage, and iconic destinations in one unforgettable trip.",
+        "include": " English speaking driver, 1 bottle mineral water, Parking and entrance fee based on above programs",
+        "exclude": "Trevel insurance, Optionals tour, Any personal expenses, Gradtuities for tour dirver",
+        "destination_list":[
+          {"id": 1011, "name": "Silver & Gold gallery"},
+          {"id": 1012, "name": "Batik factory"},
+          {"id": 1013, "name": "Kintamani Volcano"},
+          {"id": 1014, "name": "Tirta Empul holy spring"},
+          {"id": 1015, "name": "Tegalalang Rice Terrace & Swing"},
+          {"id": 1016, "name": "Ubud palace"}
+        ]
       },
       {
         "id": 102,
-        "slug": "east-bali-tour",
-        "name": "East Bali Tour",
+        "slug": "bedugul-tanah-lot",
+        "name": "Bedugul - Tanah Lot",
         "rating": "5.0",
-        "price": "IDR 600k",
+        "price": "IDR 500k",
         "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
-        "description": "Jelajahi sisi timur Bali yang eksotis termasuk Pura Lempuyang dan Tirta Gangga."
+        "description": "Jelajahi sisi timur Bali yang eksotis termasuk Pura Lempuyang dan Tirta Gangga.",
+                "destination_list":[
+          {"id": 1011, "name": "Leke-leke Waterfall"},
+          {"id": 1012, "name": "Ulun Danu Floating Temple"},
+          {"id": 1013, "name": "Tanah Lot Temple"}
+        ]
       }
     ]
   },

@@ -3,6 +3,8 @@
 
   <main>
     <slot />
+
+    <BackToTopButton />
   </main>
 
   <Footer />
@@ -11,4 +13,5 @@
 <script setup>
 import Header from '../components/layout/Header.vue'
 import Footer from '../components/layout/Footer.vue'
+import BackToTopButton from '../components/ui/BackToTopButton.vue';
 </script>
