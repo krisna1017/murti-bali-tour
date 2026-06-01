@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "title": "10 Reason why you should visit New Jersey",
+    "date": "Mei 26, 2026",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5' // Gambar Scuba Diving",
+    "content": [
+      {
+        "heading": "Beautiful Destinations in Bali",
+        "text": "One of the most popular places in Bali is Ubud..."
+      },
+      {
+        "heading": "Lombok",
+        "text": "One of the most popular places in Bali is Ubud..."
+      },
+      {
+        "heading": "Balinese Cu lombok",
+        "text": "Bali is not only about beautiful landscapes..."
+      },
+      {
+        "heading": "Acti lombok",
+        "text": "Surfing, hiking, and cultural experiences..."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "10 Reason why you should visit New Jersey",
+    "date": "Mei 26, 2026",
+    "readTime": "6 min read",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5' // Gambar Scuba Diving",
+    "content": [
+      {
+        "heading": "Lombok",
+        "text": "One of the most popular places in Bali is Ubud..."
+      },
+      {
+        "heading": "Balinese Cu lombok",
+        "text": "Bali is not only about beautiful landscapes..."
+      },
+      {
+        "heading": "Acti lombok",
+        "text": "Surfing, hiking, and cultural experiences..."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Indahnya Bali",
+    "date": "Mei 20, 2026",
+    "readTime": "10 min read",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5' // Gambar Scuba Diving",
+    "content": [
+      {
+        "heading": "Lombok",
+        "text": "One of the most popular places in Bali is Ubud..."
+      },
+      {
+        "heading": "Balinese Cu lombok",
+        "text": "Bali is not only about beautiful landscapes..."
+      },
+      {
+        "heading": "Acti lombok",
+        "text": "Surfing, hiking, and cultural experiences..."
+      }
+    ]
+  }
+]

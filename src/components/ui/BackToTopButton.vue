@@ -3,7 +3,7 @@
     <button
       v-if="showButton"
       @click="scrollToTop"
-      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-sky-500 hover:bg-sky-600 text-white shadow-lg shadow-sky-500/30 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-yellow-600 hover:bg-yellow-700 text-white shadow-lg shadow-yellow-400/30 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
       aria-label="Back to top"
     >
       <svg

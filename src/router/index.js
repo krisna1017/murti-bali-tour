@@ -7,6 +7,7 @@ import Gallery from '../views/Gallery.vue'
 import Blog from '../views/Blog.vue'
 import CategoryDetail from '../views/CategoryDetail.vue'
 import TourDetail from '../views/TourDetail.vue'
+import BlogDetail from '../views/BlogDetail.vue'
 
 // import CategoryDetailView from '../views/CategoryDetail.vue';
 
@@ -47,6 +48,12 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     component: Blog
+  },
+  {
+    path: '/blog/:id',
+    name: 'blog-detail',
+    component: BlogDetail,
+    props: true
   }
 ]
 

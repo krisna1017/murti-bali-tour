@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Trusted Local Driver",
+    "description":
+      "Explore Bali with experienced, English speaking driver.",
+    "icon": "UserGroupIcon",
+    "image":
+      "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "Private & Flexible Tours",
+    "description":
+      "Customize your itinerary with private day trips and activity packages.",
+    "icon": "ShareIcon",
+    "image":
+      "https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Comfortable Transport",
+    "description":
+      "Travel in air-conditioned vehicles with professional drivers.",
+    "icon": "TruckIcon",
+    "image":
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Hassle Free Booking",
+    "description":
+     "Easy online booking with transparent prices for all tours.",
+    "icon": "CheckBadgeIcon",
+    "image":
+      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop"
+  }
+]

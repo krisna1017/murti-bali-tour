@@ -124,7 +124,7 @@
     </div>
 
     <!-- Bottom -->
-    <div class="bg-[#1BA7CB] flex flex-col py-2 text-center text-white text-[12px]">
+    <div class="bg-sky-600 flex flex-col py-2 text-center text-white text-[12px]">
       <span>
         © Copyright 2026 Murti Bali Tour. All Rights Reserved.
       </span>

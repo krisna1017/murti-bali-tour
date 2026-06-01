@@ -1,15 +1,14 @@
 <template>
   <MainLayout>
 
-    <section class="min-h-screen flex items-center justify-center">
-      <h1 class="text-5xl font-bold">
-        Blog Page
-      </h1>
-    </section>
+    <HeroSection />
+    <BlogDetail />
 
   </MainLayout>
 </template>
 
 <script setup>
+import HeroSection from '../components/blog/HeroSection.vue';
 import MainLayout from '../layouts/MainLayout.vue'
+import BlogDetail from '../components/blog/BlogSection.vue';
 </script>

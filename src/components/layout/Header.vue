@@ -5,8 +5,8 @@
     :class="[
       isScrolled 
       ? 'bg-sky-600/80 shadow-xl backdrop-blur-sm' 
-      : 'bg-sky-500 backdrop-blur-md',
-      'fixed top-0 left-0 w-full z-50 transition-all duration-300 text-gray-300'
+      : 'bg-sky-600 backdrop-blur-md',
+      'fixed top-0 left-0 w-full z-50 transition-all duration-300 text-gray-300 font-poppins'
     ]"
   >
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -40,7 +40,7 @@
                   <MenuButton 
                     :class="[
                     isDropdownActive(item.children)
-                    ? 'text-white underline underline-offset-[6px] decoration-2 decoration-sky-500'
+                    ? 'text-white underline underline-offset-[6px] decoration-2 decoration-white'
                     : 'text-gray-300 hover:text-white hover:underline hover:underline-offset-[6px] hover:decoration-2 hover:decoration-sky-500',
                     'block px-4 py-2.5 text-sm font-medium'
                     ]"
@@ -68,7 +68,7 @@
                             :to="{ name: 'package-detail', params: { slug: subItem.slug } }"
                             :class="[
                               isActive 
-                              ? 'text-white underline underline-offset-[6px] decoration-2 decoration-sky-500' 
+                              ? 'text-white underline underline-offset-[6px] decoration-2 decoration-white' 
                               : 'text-black hover:underline hover:underline-offset-[6px] hover:decoration-2 hover:decoration-sky-500',
                               'block px-4 py-2.5 text-sm font-medium'
                             ]"
@@ -89,8 +89,8 @@
                   <span
                     :class="[
                       isActive
-                        ? 'text-white underline underline-offset-[6px] decoration-2 decoration-sky-500'
-                        : 'text-gray-300 hover:underline hover:underline-offset-[6px] hover:decoration-2 hover:decoration-sky-500 hover:text-white',
+                        ? 'text-white underline underline-offset-[6px] decoration-2 decoration-white'
+                        : 'text-gray-300 hover:underline hover:underline-offset-[6px] hover:decoration-2 hover:decoration-white hover:text-white',
                       'rounded-md px-3 py-2 text-sm font-medium transition-all duration-300'
                     ]"
                   >
@@ -100,6 +100,12 @@
 
               </template>
             </div>
+          </div>
+
+          <div class="hidden lg:flex">
+            <button class="py-0 px-6 bg-white hover:bg-sky-50 text-sky-700 hover:text-sky-700 rounded-3xl text-sm cursor-pointer font-regular">
+              Book Now
+            </button>
           </div>
         </div>
       </div>

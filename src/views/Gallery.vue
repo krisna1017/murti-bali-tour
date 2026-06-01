@@ -1,15 +1,14 @@
 <template>
   <MainLayout>
 
-    <section class="min-h-screen flex items-center justify-center">
-      <h1 class="text-5xl font-bold">
-        Gallery Page
-      </h1>
-    </section>
+    <HeroSection />
+    <GallerySection />
 
   </MainLayout>
 </template>
 
 <script setup>
+import GallerySection from '../components/gallery/GallerySection.vue';
+import HeroSection from '../components/gallery/HeroSection.vue';
 import MainLayout from '../layouts/MainLayout.vue'
 </script>
