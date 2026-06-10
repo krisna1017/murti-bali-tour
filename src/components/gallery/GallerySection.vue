@@ -10,15 +10,17 @@
   
       <div class="grid grid-cols-12 gap-3 auto-rows-[120px] sm:auto-rows-[160px] md:auto-rows-[180px]">
         <div 
-          v-for="(item, index) in galleryItems" 
+          v-for="(item, index) in paginatedGallery" 
           :key="index"
           :class="item.gridClass"
           class="overflow-hidden rounded-lg cursor-pointer group relative"
-          @click="openLightbox(index)"
+          @click="openLightbox(((currentPage - 1) * itemsPerPage) + index)"
         >
           <img 
             :src="item.src" 
             :alt="item.alt" 
+            loading="lazy"
+            decoding="async"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
           />
           <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -26,6 +28,49 @@
           </div>
         </div>
       </div>
+
+      <!-- PAGINATION -->
+      <div class="flex justify-center items-center gap-2 mt-10 flex-wrap">
+
+        <!-- Prev -->
+        <button
+          @click="goToPage(currentPage - 1)"
+          :disabled="currentPage === 1"
+          class="px-4 py-2 rounded-lg border text-sm transition-all
+                disabled:opacity-40 disabled:cursor-not-allowed
+                hover:bg-sky-700 hover:text-white"
+        >
+          Prev
+        </button>
+
+        <!-- Number -->
+        <button
+          v-for="page in totalPages"
+          :key="page"
+          @click="goToPage(page)"
+          :class="[
+            currentPage === page
+              ? 'bg-sky-700 text-white border-sky-700'
+              : 'bg-white text-gray-700 border-gray-300 hover:bg-sky-50',
+            'w-10 h-10 rounded-lg border font-medium transition-all'
+          ]"
+        >
+          {{ page }}
+        </button>
+
+        <!-- Next -->
+        <button
+          @click="goToPage(currentPage + 1)"
+          :disabled="currentPage === totalPages"
+          class="px-4 py-2 rounded-lg border text-sm transition-all
+                disabled:opacity-40 disabled:cursor-not-allowed
+                hover:bg-sky-700 hover:text-white"
+        >
+          Next
+        </button>
+
+      </div>
+
     </div>
 
     <Transition name="fade">
@@ -71,21 +116,11 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import galleryData from '../../data/gallery.json'
 // Data Gallery Dinamis (Menyesuaikan dengan class grid bawaan Anda)
-const galleryItems = ref([
-  { src: '/bali.jpeg', alt: 'Road view', gridClass: 'col-span-4 row-span-2 md:col-span-3' },
-  { src: '/bali.jpeg', alt: 'Ulun Danu Beratan', gridClass: 'col-span-8 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Scuba diving', gridClass: 'col-span-4 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Rice terrace', gridClass: 'col-span-4 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Broken Beach', gridClass: 'col-span-6 row-span-2 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Tanah Lot', gridClass: 'col-span-6 row-span-2 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'ATV Adventure', gridClass: 'col-span-7 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Bali Swing', gridClass: 'col-span-5 row-span-2 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Lempuyang Gate', gridClass: 'col-span-7 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Tanah Lot Beach View', gridClass: 'col-span-6 row-span-2 md:col-span-6 md:row-span-1' },
-])
+
+const galleryItems = ref(galleryData)
 
 // State Lightbox
 const isOpen = ref(false)
@@ -121,6 +156,35 @@ const handleKeyDown = (e) => {
 
 onMounted(() => window.addEventListener('keydown', handleKeyDown))
 onUnmounted(() => window.removeEventListener('keydown', handleKeyDown))
+
+
+// pagination
+const currentPage = ref(1)
+const itemsPerPage = 16
+
+// total halaman
+const totalPages = computed(() => {
+  return Math.ceil(galleryItems.value.length / itemsPerPage)
+})
+
+// data gallery sesuai halaman aktif
+const paginatedGallery = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage
+  const end = start + itemsPerPage
+
+  return galleryItems.value.slice(start, end)
+})
+
+// pindah halaman
+const goToPage = (page) => {
+  currentPage.value = page
+
+  // // scroll halus ke atas gallery
+  // window.scrollTo({
+  //   top: 0,
+  //   behavior: 'smooth'
+  // })
+}
 </script>
 
 <style scoped>

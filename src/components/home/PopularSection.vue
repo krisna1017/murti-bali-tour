@@ -59,7 +59,7 @@
         <!-- Price -->
         <div class="mt-2">
           <span class="text-md font-semibold text-gray-800">
-            IDR {{ item.price }}k
+            {{ item.price }}
           </span>
 
           <span class="text-gray-400 text-[12px]">/pax</span>

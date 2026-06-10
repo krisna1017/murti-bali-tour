@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-linear-to-b from-sky-100 via-[#ffffff] to-white px-4 py-12 font-poppins">
 
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
       
       <RouterLink 
         v-for="post in BlogData"

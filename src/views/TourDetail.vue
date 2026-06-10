@@ -1,7 +1,7 @@
 <template>
   <MainLayout>
     <div v-if="tour" class="min-h-screen px-4 bg-white pt-24 pb-16 font-poppins text-slate-800 text-left">
-      <div class="lg:col-span-2 space-y-3">
+      <div class="max-w-6xl mx-auto lg:col-span-2 space-y-3">
 
         <div class="bg-transparent rounded-3xl lg:flex items-center justify-between">
           <h1 class="text-lg md:text-3xl font-regular tracking-tight text-sky-800 mb-1">
@@ -15,24 +15,6 @@
             </span>
           </div>
         </div>
-        
-        <!-- <div class="grid grid-cols-4 grid-rows-2 gap-3">
-            <div class="row-span-2 col-span-2">
-              <img :src="tour.image" alt="" class="rounded-lg">
-            </div>
-            <div class="row-span-1 col-span-1">
-              <img :src="tour.image" alt="" class="rounded-lg">
-            </div>
-            <div class="row-span-1 col-span-1">
-              <img :src="tour.image" alt="" class="rounded-lg">
-            </div>
-            <div class="row-span-2 col-span-1">
-              <img :src="tour.image" alt="" class="rounded-lg">
-            </div>
-            <div class="row-span-2 col-span-1">
-              <img :src="tour.image" alt="" class="rounded-lg">
-            </div>
-        </div> -->
 
         <!-- MOBILE SLIDER -->
         <div class="relative md:hidden">
@@ -41,7 +23,7 @@
             <img
               :src="tourImages[currentImage]"
               alt=""
-              class="w-full h-[260px] object-cover transition-all duration-300"
+              class="w-full h-65 object-cover transition-all duration-300"
             />
           </div>
 
@@ -74,7 +56,7 @@
         </div>
 
         <!-- DESKTOP GRID -->
-        <div class="hidden md:grid grid-cols-4 grid-rows-2 gap-3">
+        <div class="hidden md:grid grid-cols-4 grid-rows-2 gap-3 h-150">
           <div class="row-span-2 col-span-2">
             <img :src="tour.images[0]" alt="" class="rounded-lg w-full h-full object-cover">
           </div>
@@ -202,7 +184,7 @@
                     :to="`/packages/${currentCategory.slug}/${item.slug}`" 
                     class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition-all group"
                   >
-                    <div class="overflow-hidden aspect-4/3 w-full bg-gray-100">
+                    <div class="overflow-hidden aspect-6/3 w-full bg-gray-100">
                       <img
                         :src="item.image"
                         :alt="item.name"

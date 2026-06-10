@@ -19,12 +19,25 @@
           <img 
             :src="item.src" 
             :alt="item.alt" 
+            loading="lazy"
+            decoding="async"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
           />
           <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <span class="text-white bg-black/40 p-2 rounded-full text-sm">zoom</span>
           </div>
         </div>
+      </div>
+
+      <!-- SHOW MORE -->
+      <div class="flex justify-end mt-6">
+        <RouterLink
+          to="/gallery"
+          class="inline-flex items-center gap-2 text-sky-700 font-medium hover:text-sky-900 transition-colors"
+        >
+          Show More
+          <span class="text-lg">→</span>
+        </RouterLink>
       </div>
     </div>
 
@@ -72,20 +85,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import galleryData from '../../data/gallery.json'
 
 // Data Gallery Dinamis (Menyesuaikan dengan class grid bawaan Anda)
-const galleryItems = ref([
-  { src: '/bali.jpeg', alt: 'Road view', gridClass: 'col-span-4 row-span-2 md:col-span-3' },
-  { src: '/bali.jpeg', alt: 'Ulun Danu Beratan', gridClass: 'col-span-8 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Scuba diving', gridClass: 'col-span-4 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Rice terrace', gridClass: 'col-span-4 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Broken Beach', gridClass: 'col-span-6 row-span-2 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Tanah Lot', gridClass: 'col-span-6 row-span-2 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'ATV Adventure', gridClass: 'col-span-7 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Bali Swing', gridClass: 'col-span-5 row-span-2 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Lempuyang Gate', gridClass: 'col-span-7 row-span-1 md:col-span-3 md:row-span-1' },
-  { src: '/bali.jpeg', alt: 'Tanah Lot Beach View', gridClass: 'col-span-6 row-span-2 md:col-span-6 md:row-span-1' },
-])
+const galleryItems = ref(galleryData.slice(0, 10))
 
 // State Lightbox
 const isOpen = ref(false)

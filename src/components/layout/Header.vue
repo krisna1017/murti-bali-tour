@@ -9,7 +9,7 @@
       'fixed top-0 left-0 w-full z-50 transition-all duration-300 text-gray-300 font-poppins'
     ]"
   >
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-6xl px-2 lg:px-0">
       <div class="relative flex h-16 items-center justify-between">
         
         <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -102,7 +102,7 @@
             </div>
           </div>
 
-          <div class="hidden lg:flex">
+          <div class="hidden md:flex">
             <button class="py-0 px-6 bg-white hover:bg-sky-50 text-sky-700 hover:text-sky-700 rounded-3xl text-sm cursor-pointer font-regular">
               Book Now
             </button>

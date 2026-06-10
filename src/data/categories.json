@@ -13,7 +13,7 @@
         "name": "Kintamani - Ubud Tour",
         "rating": "5.0",
         "price": "IDR 450k",
-        "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        "image": "/detail/kintamani/hero-detail-kintamani-1.png",
         "images" : [
           "/detail/kintamani/hero-detail-kintamani-1.png",
           "/detail/kintamani/hero-detail-kintamani-2.png",
@@ -40,7 +40,14 @@
         "name": "Bedugul - Tanah Lot",
         "rating": "5.0",
         "price": "IDR 500k",
-        "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        "image": "/detail/bedugul/hero-detail-bedugul-1.png",
+        "images" : [
+          "/detail/bedugul/hero-detail-bedugul-1.png",
+          "/detail/bedugul/hero-detail-bedugul-2.jpeg",
+          "/detail/bedugul/hero-detail-bedugul-3.jpeg",
+          "/detail/bedugul/hero-detail-bedugul-4.jpg",
+          "/detail/bedugul/hero-detail-bedugul-5.jpg"
+        ],
         "description": "Jelajahi sisi timur Bali yang eksotis termasuk Pura Lempuyang dan Tirta Gangga.",
                 "destination_list":[
           {"id": 1011, "name": "Leke-leke Waterfall"},
@@ -60,11 +67,34 @@
     "packages_list":[
       {
         "id": 201,
-        "slug": "lembongan-menjangan",
-        "name": "Lembongan - Menjangan Tour",
+        "slug": "east-tour",
+        "name": "East - Tour",
         "rating": "5.0",
         "price": "IDR 300k",
-        "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan."
+      },
+      {
+        "id": 202,
+        "slug": "west-tour",
+        "name": "West - Tour",
+        "rating": "5.0",
+        "price": "IDR 300k",
+        "image": "/detail/nusa-penida/west/hero-nusa-penida-west-1.jpg",
+         "images" : [
+          "/detail/nusa-penida/west/hero-nusa-penida-west-1.jpg",
+          "/detail/nusa-penida/west/hero-nusa-penida-west-2.jpg",
+          "/detail/nusa-penida/west/hero-nusa-penida-west-3.jpeg",
+          "/detail/nusa-penida/west/hero-nusa-penida-west-4.jpeg",
+          "/detail/nusa-penida/west/hero-nusa-penida-west-5.jpg"
+        ],
         "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan."
       }
     ]
