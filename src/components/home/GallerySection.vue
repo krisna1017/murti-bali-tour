@@ -2,59 +2,152 @@
   <section class="py-16 bg-white font-poppins">
     <div class="max-w-6xl mx-auto px-4 bg-white text-center">
       <p class="text-gray-500 font-medium text-[12px] sm:text-base tracking-wide">
-        Make Your Tour More Pleasue
+        Make Your Tour More Pleasant
       </p>
       <h2 class="text-3xl sm:text-4xl font-bold text-[#074e74] mt-1 mb-8 font-sans">
         Recent Gallery
       </h2>
   
       <div class="grid grid-cols-12 gap-3 auto-rows-[120px] sm:auto-rows-[160px] md:auto-rows-[180px]">
-        
-        <div class="col-span-4 row-span-2 md:col-span-3 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Road view" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        <div 
+          v-for="(item, index) in galleryItems" 
+          :key="index"
+          :class="item.gridClass"
+          class="overflow-hidden rounded-lg cursor-pointer group relative"
+          @click="openLightbox(index)"
+        >
+          <img 
+            :src="item.src" 
+            :alt="item.alt" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+          />
+          <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white bg-black/40 p-2 rounded-full text-sm">zoom</span>
+          </div>
         </div>
-  
-        <div class="col-span-8 row-span-1 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4" alt="Ulun Danu Beratan" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
-        <div class="col-span-4 row-span-1 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5" alt="Scuba diving" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
-        <div class="col-span-4 row-span-1 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1511497584788-876760111969" alt="Rice terrace" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
-        <div class="col-span-6 row-span-2 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Broken Beach" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
-        <div class="col-span-6 row-span-2 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8" alt="Tanah Lot" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
-        <div class="col-span-7 row-span-1 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd" alt="ATV Adventure" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
-        <div class="col-span-5 row-span-2 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd" alt="Bali Swing" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
-        <div class="col-span-7 row-span-1 md:col-span-3 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315" alt="Lempuyang Gate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-
-        <div class="col-span-6 row-span-2 md:col-span-6 md:row-span-1 overflow-hidden rounded-lg">
-          <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8" alt="Tanah Lot" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-        </div>
-  
       </div>
     </div>
+
+    <Transition name="fade">
+      <div 
+        v-if="isOpen" 
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 select-none"
+        @click.self="closeLightbox"
+      >
+        <button 
+          @click="closeLightbox" 
+          class="absolute top-5 right-5 text-white text-4xl font-light hover:text-gray-300 z-50 transition-colors"
+        >
+          &times;
+        </button>
+
+        <button 
+          @click="prevImage" 
+          class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl transition-all"
+        >
+          &#10094;
+        </button>
+
+        <div class="max-w-4xl max-h-[80vh] flex flex-col items-center">
+          <img 
+            :src="galleryItems[currentIndex].src" 
+            :alt="galleryItems[currentIndex].alt" 
+            class="max-w-full max-h-[75vh] object-contain rounded animate-scaleUp"
+          />
+          <p class="text-white mt-4 text-lg font-medium tracking-wide">
+            {{ galleryItems[currentIndex].alt }}
+          </p>
+        </div>
+
+        <button 
+          @click="nextImage" 
+          class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl transition-all"
+        >
+          &#10095;
+        </button>
+      </div>
+    </Transition>
   </section>
 </template>
 
 <script setup>
-// Anda bisa mengubah src gambar di atas dengan URL aset lokal Anda sendiri (misal: /images/gallery-1.jpg)
+import { ref, onMounted, onUnmounted } from 'vue'
+
+// Data Gallery Dinamis (Menyesuaikan dengan class grid bawaan Anda)
+const galleryItems = ref([
+  { src: '/bali.jpeg', alt: 'Road view', gridClass: 'col-span-4 row-span-2 md:col-span-3' },
+  { src: '/bali.jpeg', alt: 'Ulun Danu Beratan', gridClass: 'col-span-8 row-span-1 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'Scuba diving', gridClass: 'col-span-4 row-span-1 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'Rice terrace', gridClass: 'col-span-4 row-span-1 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'Broken Beach', gridClass: 'col-span-6 row-span-2 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'Tanah Lot', gridClass: 'col-span-6 row-span-2 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'ATV Adventure', gridClass: 'col-span-7 row-span-1 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'Bali Swing', gridClass: 'col-span-5 row-span-2 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'Lempuyang Gate', gridClass: 'col-span-7 row-span-1 md:col-span-3 md:row-span-1' },
+  { src: '/bali.jpeg', alt: 'Tanah Lot Beach View', gridClass: 'col-span-6 row-span-2 md:col-span-6 md:row-span-1' },
+])
+
+// State Lightbox
+const isOpen = ref(false)
+const currentIndex = ref(0)
+
+// Fungsi Navigasi
+const openLightbox = (index) => {
+  currentIndex.value = index
+  isOpen.value = true
+  document.body.style.overflow = 'hidden' // Mengunci scroll latar belakang
+}
+
+const closeLightbox = () => {
+  isOpen.value = false
+  document.body.style.overflow = '' // Mengaktifkan kembali scroll latar belakang
+}
+
+const nextImage = () => {
+  currentIndex.value = (currentIndex.value + 1) % galleryItems.value.length
+}
+
+const prevImage = () => {
+  currentIndex.value = (currentIndex.value - 1 + galleryItems.value.length) % galleryItems.value.length
+}
+
+// Navigasi menggunakan Keyboard (Panah & Escape)
+const handleKeyDown = (e) => {
+  if (!isOpen.value) return
+  if (e.key === 'ArrowRight') nextImage()
+  if (e.key === 'ArrowLeft') prevImage()
+  if (e.key === 'Escape') closeLightbox()
+}
+
+onMounted(() => window.addEventListener('keydown', handleKeyDown))
+onUnmounted(() => window.removeEventListener('keydown', handleKeyDown))
 </script>
+
+<style scoped>
+/* Animasi Transisi Fade untuk Modal */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Animasi Zoom-in Halus untuk Gambar saat Terbuka */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.25s ease-out forwards;
+}
+</style>

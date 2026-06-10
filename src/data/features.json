@@ -6,7 +6,7 @@
       "Explore Bali with experienced, English speaking driver.",
     "icon": "UserGroupIcon",
     "image":
-      "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=1200&auto=format&fit=crop"
+      "about/hero-about-1.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
       "Customize your itinerary with private day trips and activity packages.",
     "icon": "ShareIcon",
     "image":
-      "https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=1200&auto=format&fit=crop"
+      "about/hero-about-2.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
       "Travel in air-conditioned vehicles with professional drivers.",
     "icon": "TruckIcon",
     "image":
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+      "about/hero-about-3.png"
   },
   {
     "id": 4,
@@ -33,6 +33,6 @@
      "Easy online booking with transparent prices for all tours.",
     "icon": "CheckBadgeIcon",
     "image":
-      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop"
+      "about/hero-about-4.png"
   }
 ]

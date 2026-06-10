@@ -18,89 +18,73 @@
     </div>
 
     <!-- Card Grid -->
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+    <div 
+    class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
 
-      <!-- Card -->
-      <div
-        v-for="tour in tours"
-        :key="tour.title"
-        class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group"
-      >
-        
-        <!-- Image -->
-        <div class="overflow-hidden">
-          <img
-            :src="tour.image"
-            :alt="tour.title"
-            class="w-full h-34 object-cover group-hover:scale-110 transition duration-500"
-          />
-        </div>
+    <template
+    v-for="tour in tours"
+    :key="tour.id">
 
-        <!-- Content -->
-        <div class="p-2">
-
-          <!-- Title -->
-          <h3 class="text-[12px] font-semibold text-sky-900 leading-snug">
-            {{ tour.title }}
-          </h3>
-
-          <!-- Rating -->
-          <div class="flex items-center gap-1">
-            <span class="text-yellow-400 text-[12px]">★★★★★</span>
-            <span class="text-gray-500 text-[12px]">(5,0 rating)</span>
-          </div>
-
-          <!-- Price -->
-          <div class="mt-2">
-            <span class="text-md font-semibold text-gray-800">
-              IDR {{ tour.price }}k
-            </span>
-
-            <span class="text-gray-400 text-[12px]">/pax</span>
-          </div>
-
-          <!-- Button -->
-           <div class="flex justify-end">
-             <button
-               class="mt-3 flex text-[12px] items-center gap-1 text-gray-700 hover:text-sky-700 transition font-medium"
-             >
-               Read More
-               <span>→</span>
-             </button>
-           </div>
-
-        </div>
+    <!-- Card -->
+    <RouterLink
+      v-for="item in tour.packages_list"
+      :key="item.id"
+      :to="`packages/${tour.slug}/${item.slug}`"
+      class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group"
+    >
+      
+      <!-- Image -->
+      <div class="overflow-hidden">
+        <img
+          :src="item.image"
+          :alt="item.title"
+          class="w-full h-34 object-cover group-hover:scale-110 transition duration-500"
+        />
       </div>
+
+      <!-- Content -->
+      <div class="p-2">
+
+        <!-- Title -->
+        <h3 class="text-[12px] font-semibold text-sky-900 leading-snug">
+          {{ item.name }}
+        </h3>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-1">
+          <span class="text-yellow-400 text-[12px]">★★★★★</span>
+          <span class="text-gray-500 text-[12px]">(5,0 rating)</span>
+        </div>
+
+        <!-- Price -->
+        <div class="mt-2">
+          <span class="text-md font-semibold text-gray-800">
+            IDR {{ item.price }}k
+          </span>
+
+          <span class="text-gray-400 text-[12px]">/pax</span>
+        </div>
+
+        <!-- Button -->
+         <div class="flex justify-end">
+           <button
+             class="mt-3 flex text-[12px] items-center gap-1 text-gray-700 hover:text-sky-700 transition font-medium"
+           >
+             Read More
+             <span>→</span>
+           </button>
+         </div>
+
+      </div>
+    </RouterLink>
+
+    </template>
 
     </div>
   </section>
 </template>
 
 <script setup>
-const tours = [
-  {
-    title: 'Kintamani - Ubud Tour',
-    price: 450,
-    image:
-      'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'East Bali Tour',
-    price: 600,
-    image:
-      'https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Nusa Penida - West Part Trip',
-    price: 750,
-    image:
-      'https://images.unsplash.com/photo-1558005530-a7958896ec60?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Bedugul - Tanah Lot Tour',
-    price: 500,
-    image:
-      'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=1200&auto=format&fit=crop',
-  },
-]
+import tours from '../../data/categories.json'
+
 </script>

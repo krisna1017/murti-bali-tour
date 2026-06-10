@@ -4,7 +4,8 @@
     "title": "Day Bali Tours",
     "slug": "day-bali-tours",
     "subtitle": "Beauty and culture.",
-    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+    "description": "Beauty and culture",
+    "image": "../../category/hero-category-1.jpg",
     "packages_list": [
       {
         "id": 101,
@@ -13,7 +14,15 @@
         "rating": "5.0",
         "price": "IDR 450k",
         "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        "images" : [
+          "/detail/kintamani/hero-detail-kintamani-1.png",
+          "/detail/kintamani/hero-detail-kintamani-2.png",
+          "/detail/kintamani/hero-detail-kintamani-3.png",
+          "/detail/kintamani/hero-detail-kintamani-4.png",
+          "/detail/kintamani/hero-detail-kintamani-5.png"
+        ],
         "description": "The Kintamani–Ubud Tour is a perfect journey to explore Bali’s natural beauty, cultural heritage, and iconic destinations in one unforgettable trip.",
+        "hightlight": "Start at the Silver & Gold Gallery and Batik Factory to explore Bali's finest crafts, then head up to Kintamani Volcanofor a stunning crater view. Purify yourself at the sacred Tirta Empul Holy Spring, feel the thrill at Tegalalang Rice Terrace & Swing, and wrap up the day soaking in the royal culture of Ubud Palace.",
         "include": " English speaking driver, 1 bottle mineral water, Parking and entrance fee based on above programs",
         "exclude": "Trevel insurance, Optionals tour, Any personal expenses, Gradtuities for tour dirver",
         "destination_list":[
@@ -46,7 +55,8 @@
     "title": "Nusa Penida Tours",
     "slug": "nusa-penida-tours",
     "subtitle": "Explore beauty island.",
-    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+    "description": "Explore beauty island.",
+    "image": "../../category/hero-category-2.jpg",
     "packages_list":[
       {
         "id": 201,
@@ -64,13 +74,15 @@
     "title": "Activity",
     "slug": "activity",
     "subtitle": "Adventure and culture.",
-    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop"
+    "description": "Adventure and culture",
+    "image": "../../category/hero-category-3.jpg"
   },
   {
     "id": 4,
     "title": "Car Charter",
     "slug": "car-charter",
     "subtitle": "Private & flexible travel.",
-    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop"
+    "description": "Private & flexible travel.",
+    "image": "../../category/hero-category-4.jpg"
   }
 ]

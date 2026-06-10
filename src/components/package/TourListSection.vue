@@ -11,7 +11,7 @@
         
         <div class="overflow-hidden aspect-4/3 w-full bg-gray-100">
           <img
-            :src="tour.image"
+            :src="tour.images[0]"
             :alt="tour.name"
             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
           />

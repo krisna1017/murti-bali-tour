@@ -16,9 +16,10 @@
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
 
       <!-- Item -->
-      <div
+      <RouterLink
         v-for="item in categories"
-        :key="item.title"
+        :key="item.slug"
+        :to="{ name: 'package-detail', params: { slug: item.slug } }"
         class="group text-center"
       >
         <!-- Image -->
@@ -40,37 +41,12 @@
             {{ item.description }}
           </p>
         </div>
-      </div>
+      </RouterLink>
 
     </div>
   </section>
 </template>
 
 <script setup>
-const categories = [
-  {
-    title: 'Day Bali Tours',
-    description: 'Beauty and culture.',
-    image:
-      'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Nusa Penida Tours',
-    description: 'Explore beauty island.',
-    image:
-      'https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Activity',
-    description: 'Adventure and culture.',
-    image:
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Car Charter',
-    description: 'Private & flexible travel.',
-    image:
-      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop',
-  },
-]
+import categories from '../../data/categories.json'
 </script>
