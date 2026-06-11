@@ -32,7 +32,7 @@
           <div class="flex items-center justify-between mt-5 pt-3 border-t border-slate-100">
             <div class="flex items-baseline gap-0.5">
               <span class="text-lg font-extrabold text-gray-800">
-                {{ tour.price }}
+                {{ tour.price_list[0]?.name }}
               </span>
               <span class="text-gray-400 text-xs">/pax</span>
             </div>

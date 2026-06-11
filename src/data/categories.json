@@ -12,7 +12,9 @@
         "slug": "kintamani-ubud-tour",
         "name": "Kintamani - Ubud Tour",
         "rating": "5.0",
-        "price": "IDR 450k",
+        "price_list": [
+          {"id": 1011, "name": "IDR 450k"}
+        ],
         "image": "/detail/kintamani/hero-detail-kintamani-1.png",
         "images" : [
           "/detail/kintamani/hero-detail-kintamani-1.png",
@@ -39,7 +41,9 @@
         "slug": "bedugul-tanah-lot",
         "name": "Bedugul - Tanah Lot",
         "rating": "5.0",
-        "price": "IDR 500k",
+        "price_list": [
+          {"id": 3071, "name": "IDR 500k"}
+        ],
         "image": "/detail/bedugul/hero-detail-bedugul-1.png",
         "images" : [
           "/detail/bedugul/hero-detail-bedugul-1.png",
@@ -49,7 +53,7 @@
           "/detail/bedugul/hero-detail-bedugul-5.jpg"
         ],
         "description": "Jelajahi sisi timur Bali yang eksotis termasuk Pura Lempuyang dan Tirta Gangga.",
-                "destination_list":[
+        "destination_list":[
           {"id": 1011, "name": "Leke-leke Waterfall"},
           {"id": 1012, "name": "Ulun Danu Floating Temple"},
           {"id": 1013, "name": "Tanah Lot Temple"}
@@ -70,7 +74,9 @@
         "slug": "east-tour",
         "name": "East - Tour",
         "rating": "5.0",
-        "price": "IDR 300k",
+        "price_list": [
+          {"id": 3071, "name": "IDR 300k"}
+        ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
           "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
@@ -86,7 +92,9 @@
         "slug": "west-tour",
         "name": "West - Tour",
         "rating": "5.0",
-        "price": "IDR 300k",
+        "price_list": [
+          {"id": 3071, "name": "IDR 300k"}
+        ],
         "image": "/detail/nusa-penida/west/hero-nusa-penida-west-1.jpg",
          "images" : [
           "/detail/nusa-penida/west/hero-nusa-penida-west-1.jpg",
@@ -95,7 +103,14 @@
           "/detail/nusa-penida/west/hero-nusa-penida-west-4.jpeg",
           "/detail/nusa-penida/west/hero-nusa-penida-west-5.jpg"
         ],
-        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan."
+        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan.",
+        "highlight_list": [
+          {"id": 3061, "name": "Mount Batur sunrise experience by 4WD Jeep"},
+          {"id": 3062, "name": "Explore the dramatic black lava and black sand terrain"},
+          {"id": 3061, "name": "No hiking required – perfect for all ages"},
+          {"id": 3061, "name": "Led by experienced jeep driver-guide"},
+          {"id": 3061, "name": "Local breakfast included"}
+        ]
       }
     ]
   },
@@ -105,7 +120,110 @@
     "slug": "activity",
     "subtitle": "Adventure and culture.",
     "description": "Adventure and culture",
-    "image": "../../category/hero-category-3.jpg"
+    "image": "../../category/hero-category-3.jpg",
+    "packages_list":[
+      {
+        "id": 301,
+        "slug": "swing-activity",
+        "name": "Swing - Activity",
+        "rating": "5.0",
+        "price_list": [
+          {"id": 3071, "name": "IDR 300k"}
+        ],
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan.",
+        "highlight_list": [
+          {"id": 3061, "name": "Mount Batur sunrise experience by 4WD Jeep"},
+          {"id": 3062, "name": "Explore the dramatic black lava and black sand terrain"},
+          {"id": 3061, "name": "No hiking required – perfect for all ages"},
+          {"id": 3061, "name": "Led by experienced jeep driver-guide"},
+          {"id": 3061, "name": "Local breakfast included"}
+        ],
+        "include_list": [
+          {"id": 3011, "name": "single swing"},
+          {"id": 3012, "name": "extreme swing"},
+          {"id": 3013, "name": "couple swing"},
+          {"id": 3014, "name": "bed swing"}
+        ],
+        "exclude_list": [
+          {"id": 3021, "name": "Hotel transfer"},
+          {"id": 3022, "name": "Personal expenses"}
+        ],
+        "what_to_bring_list": [
+          {"id": 3041, "name": "Warm jacket or layered clothing (early morning temperatures can be cold)"},
+          {"id": 3042, "name": "Comfortable shoes (no need for hiking boots)"},
+          {"id": 3043, "name": "Small backpack or daypack, Camera or smartphone for sunrise photos"},
+          {"id": 3044, "name": "Personal snacks if needed"},
+          {"id": 3045, "name": "Sunglasses and sunscreen"},
+          {"id": 3046, "name": "Cash for entrance fees or personal expenses"}
+        ],
+        "terms_list": [
+          {"id": 3051, "name": "Minimum 2 participants per booking"},
+          {"id": 3052, "name": "Pick-up available from Ubud, Kintamani, or nearby areas with additional cost"},
+          {"id": 3053, "name": "Departure time around 3:30 AM (depending on hotel location)"},
+          {"id": 3054, "name": "Activity is weather-dependent"},
+          {"id": 3055, "name": "Not suitable for infants or guests with heart conditions"}
+        ]
+      },
+      {
+        "id": 302,
+        "slug": "jeep-sunrise-activity",
+        "name": "Jeep Sunrise - Activity",
+        "rating": "5.0",
+        "price_list": [
+          {"id": 3071, "name": "IDR 300k"}
+        ],
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Witness the magical sunrise over Mount Batur without hiking! Enjoy a thrilling 4WD jeep ride to the viewpoint and explore the stunning black lava fields in a one-of-a-kind volcanic landscape.",
+        "highlight_list": [
+          {"id": 3061, "name": "Mount Batur sunrise experience by 4WD Jeep"},
+          {"id": 3062, "name": "Explore the dramatic black lava and black sand terrain"},
+          {"id": 3061, "name": "No hiking required – perfect for all ages"},
+          {"id": 3061, "name": "Led by experienced jeep driver-guide"},
+          {"id": 3061, "name": "Local breakfast included"}
+        ],
+        "include_list": [
+          {"id": 3021, "name": "4WD Jeep ride to sunrise viewpoint"},
+          {"id": 3022, "name": "Black Lava & Black Sand tour"},
+          {"id": 3023, "name": "Local breakfast with coffee or tea"},
+          {"id": 3024, "name": "Driver as guide"},
+          {"id": 3025, "name": "Mineral water"}
+        ],
+        "exclude_list": [
+          {"id": 3031, "name": "Hotel transfer"},
+          {"id": 3032, "name": "Personal expenses"}
+        ],
+        "what_to_bring_list": [
+          {"id": 3041, "name": "Warm jacket or layered clothing (early morning temperatures can be cold)"},
+          {"id": 3042, "name": "Comfortable shoes (no need for hiking boots)"},
+          {"id": 3043, "name": "Small backpack or daypack, Camera or smartphone for sunrise photos"},
+          {"id": 3044, "name": "Personal snacks if needed"},
+          {"id": 3045, "name": "Sunglasses and sunscreen"},
+          {"id": 3046, "name": "Cash for entrance fees or personal expenses"}
+        ],
+        "terms_list": [
+          {"id": 3051, "name": "Minimum 2 participants per booking"},
+          {"id": 3052, "name": "Pick-up available from Ubud, Kintamani, or nearby areas with additional cost"},
+          {"id": 3053, "name": "Departure time around 3:30 AM (depending on hotel location)"},
+          {"id": 3054, "name": "Activity is weather-dependent"},
+          {"id": 3055, "name": "Not suitable for infants or guests with heart conditions"}
+        ]
+      }
+    ]
   },
   {
     "id": 4,

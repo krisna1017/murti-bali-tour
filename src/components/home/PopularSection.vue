@@ -21,15 +21,11 @@
     <div 
     class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
 
-    <template
-    v-for="tour in tours"
-    :key="tour.id">
-
     <!-- Card -->
     <RouterLink
-      v-for="item in tour.packages_list"
+      v-for="item in toursItem"
       :key="item.id"
-      :to="`packages/${tour.slug}/${item.slug}`"
+      :to="`/packages/${item.category_slug}/${item.slug}`"
       class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group"
     >
       
@@ -59,7 +55,7 @@
         <!-- Price -->
         <div class="mt-2">
           <span class="text-md font-semibold text-gray-800">
-            {{ item.price }}
+            {{ item.price_list[0]?.name }}
           </span>
 
           <span class="text-gray-400 text-[12px]">/pax</span>
@@ -78,13 +74,22 @@
       </div>
     </RouterLink>
 
-    </template>
-
     </div>
   </section>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import tours from '../../data/categories.json'
 
+const toursItem = computed(() => {
+  return tours
+    .flatMap(category =>
+      (category.packages_list || []).map(item => ({
+        ...item,
+        category_slug: category.slug
+      }))
+    )
+    .slice(0, 4)
+})
 </script>

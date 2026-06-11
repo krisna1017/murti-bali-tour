@@ -57,25 +57,100 @@
 
         <!-- DESKTOP GRID -->
         <div class="hidden md:grid grid-cols-4 grid-rows-2 gap-3 h-150">
-          <div class="row-span-2 col-span-2">
-            <img :src="tour.images[0]" alt="" class="rounded-lg w-full h-full object-cover">
+
+          <div 
+            class="row-span-2 col-span-2 cursor-pointer overflow-hidden rounded-lg"
+            @click="openDesktopGallery(0)"
+          >
+            <img 
+              :src="tour.images[0]" 
+              alt="" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            >
           </div>
 
-          <div class="row-span-1 col-span-1">
-            <img :src="tour.images[1]" alt="" class="rounded-lg w-full h-full object-cover">
+          <div 
+            class="row-span-1 col-span-1 cursor-pointer overflow-hidden rounded-lg"
+            @click="openDesktopGallery(1)"
+          >
+            <img 
+              :src="tour.images[1]" 
+              alt="" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            >
           </div>
 
-          <div class="row-span-1 col-span-1">
-            <img :src="tour.images[2]" alt="" class="rounded-lg w-full h-full object-cover">
+          <div 
+            class="row-span-1 col-span-1 cursor-pointer overflow-hidden rounded-lg"
+            @click="openDesktopGallery(2)"
+          >
+            <img 
+              :src="tour.images[2]" 
+              alt="" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            >
           </div>
 
-          <div class="row-span-2 col-span-1">
-            <img :src="tour.images[3]" alt="" class="rounded-lg w-full h-full object-cover">
+          <div 
+            class="row-span-2 col-span-1 cursor-pointer overflow-hidden rounded-lg"
+            @click="openDesktopGallery(3)"
+          >
+            <img 
+              :src="tour.images[3]" 
+              alt="" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            >
           </div>
 
-          <div class="row-span-2 col-span-1">
-            <img :src="tour.images[4]" alt="" class="rounded-lg w-full h-full object-cover">
+          <div 
+            class="row-span-2 col-span-1 cursor-pointer overflow-hidden rounded-lg"
+            @click="openDesktopGallery(4)"
+          >
+            <img 
+              :src="tour.images[4]" 
+              alt="" 
+              class="w-full h-full object-cover hover:scale-105 transition duration-300"
+            >
           </div>
+        </div>
+
+        <!-- DESKTOP LIGHTBOX -->
+        <div
+          v-if="showDesktopGallery"
+          class="hidden md:flex fixed inset-0 z-50 bg-black/90 items-center justify-center h-screen"
+        >
+          
+          <!-- Close -->
+          <button
+            @click="closeDesktopGallery"
+            class="absolute top-6 right-6 text-white text-4xl z-50"
+          >
+            ✕
+          </button>
+
+          <!-- Prev -->
+          <button
+            @click="prevImage"
+            class="absolute left-6 text-white text-5xl bg-black/40 hover:bg-black/70 w-14 h-14 rounded-full flex items-center justify-center"
+          >
+            ❮
+          </button>
+
+          <!-- Image -->
+          <img
+            :src="tourImages[currentImage]"
+            alt=""
+            class="max-w-6xl max-h-[85vh] object-contain rounded-xl"
+          />
+
+          <!-- Next -->
+          <button
+            @click="nextImage"
+            class="absolute right-6 text-white text-5xl bg-black/40 hover:bg-black/70 w-14 h-14 rounded-full flex items-center justify-center"
+          >
+            ❯
+          </button>
+
         </div>
     
 
@@ -95,50 +170,94 @@
               </p>
             </div>
 
-            <div class="">
+            <div 
+            v-if="tour.highlight_list?.length"
+            class="">
               <h2 class="font-bold">Hightlight :</h2>
-              <p class="text-slate-600 text-sm md:text-base leading-relaxed whitespace-pre-line ml-3">
-                {{ tour.hightlight }}
-              </p>
-            </div>
-
-            <div class="">
-              <h2 class="font-bold">Destination :</h2>
-              <div
-              v-for="dest in tour.destination_list" :key="dest.id"
+            <div
+              v-for="highlight in tour.highlight_list" :key="highlight.id"
               class="relative-group">
               <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
-                {{ dest.name }}
+                {{ highlight.name }}
               </li>
               </div>
             </div>
 
-            <div class="">
+            <div 
+            v-if="tour.destination_list?.length"
+            class="">
+              <h2 class="font-bold">Destination :</h2>
+              <div
+              v-for="dest in tour.destination_list" :key="dest.id"
+              class="relative-group">
+                <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
+                  {{ dest.name }}
+                </li>
+              </div>
+            </div>
+
+            <div 
+            v-if="tour.price_list?.length"
+            class="">
               <h2 class="font-bold">Price :</h2>
-              <p class="text-slate-600 text-sm md:text-base leading-relaxed whitespace-pre-line ml-3">
-                {{ tour.price }}
-              </p>
+              <div
+              v-for="price in tour.price_list" :key="price.id"
+              class="relative-group">
+                <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
+                  {{ price.name }}
+                </li>
+              </div>
             </div>
 
-            <div class="">
+            <div 
+            v-if="tour.include_list?.length"
+            class="">
               <h2 class="font-bold">Includes :</h2>
-              <p class="text-slate-600 text-sm md:text-base leading-relaxed whitespace-pre-line ml-3">
-                {{ tour.include }}
-              </p>
+              <div
+              v-for="include in tour.include_list" :key="include.id"
+              class="relative-group">
+                <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
+                  {{ include.name }}
+                </li>
+              </div>
             </div>
 
-            <div class="">
+            <div 
+            v-if="tour.exclude_list?.length"
+            class="">
               <h2 class="font-bold">Excludes :</h2>
-              <p class="text-slate-600 text-sm md:text-base leading-relaxed whitespace-pre-line ml-3">
-                {{ tour.exclude }}
-              </p>
+              <div
+              v-for="exclude in tour.exclude_list" :key="exclude.id"
+              class="relative-group">
+                <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
+                  {{ exclude.name }}
+                </li>
+              </div>
             </div>
 
-            <div class="">
+            <div 
+            v-if="tour.what_to_bring_list?.length"
+            class="">
+              <h2 class="font-bold">What to Bring :</h2>
+              <div
+              v-for="whatToBring in tour.what_to_bring_list" :key="whatToBring.id"
+              class="relative-group">
+                <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
+                  {{ whatToBring.name }}
+                </li>
+              </div>
+            </div>
+            <div 
+            v-if="tour.terms_list?.length"
+            class="">
               <h2 class="font-bold">Terms and Conditions :</h2>
-              <p class="text-slate-600 text-sm md:text-base leading-relaxed whitespace-pre-line ml-3">
-                {{ tour.term_condition }}
-              </p>
+              <div
+              v-for="term in tour.terms_list" :key="term.id"
+              class="relative-group">
+                <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
+                  {{ term.name }}
+                </li>
+              </div>
             </div>
 
           </div>
@@ -148,7 +267,7 @@
                 <div class="flex items-baseline gap-2 mt-1 mb-6">
                   <span class="text-3xl font-thin">From</span>
                   <span class="text-3xl font-regular text-sky-500">
-                    {{ tour.price }}
+                    {{ tour.price_list[0]?.name }}
                   </span>
                 </div>
     
@@ -207,7 +326,7 @@
                       <div class="flex items-center justify-between mt-5 pt-3 border-t border-slate-100">
                         <div class="flex items-baseline gap-0.5">
                           <span class="text-lg font-extrabold text-gray-800">
-                            {{ item.price }}
+                            {{ item.price_list[0]?.name }}
                           </span>
                           <span class="text-gray-400 text-xs">/pax</span>
                         </div>
@@ -255,6 +374,19 @@ const props = defineProps({
 })
 
 const currentImage = ref(0)
+
+const showDesktopGallery = ref(false)
+
+const openDesktopGallery = (index) => {
+  currentImage.value = index
+  showDesktopGallery.value = true
+  document.body.style.overflow = 'hidden'
+}
+
+const closeDesktopGallery = () => {
+  showDesktopGallery.value = false
+  document.body.style.overflow = ''
+}
 
 const tourImages = computed(() => {
   if (!tour.value) return []
@@ -307,7 +439,7 @@ const whatsappUrl = computed(() => {
   if (!tour.value) return '#'
   
   const nomorWa = '6281234567890' // ➔ GANTI menggunakan nomor WhatsApp asli bisnismu
-  const teksPesan = `Halo Murti Bali Tour, saya tertarik dan ingin memesan paket wisata berikut:\n\n*Nama Paket:* ${tour.value.name}\n*Harga:* ${tour.value.price}/pax\n\nMohon informasi ketersediaan jadwalnya, terima kasih.`
+  const teksPesan = `Halo Murti Bali Tour, saya tertarik dan ingin memesan paket wisata berikut:\n\n*Nama Paket:* ${tour.value.name}\n*Harga:* ${tour.value.price_list[0]?.name}/pax\n\nMohon informasi ketersediaan jadwalnya, terima kasih.`
   
   return `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodeURIComponent(teksPesan)}`
 })
