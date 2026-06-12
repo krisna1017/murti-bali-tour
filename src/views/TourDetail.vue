@@ -204,7 +204,7 @@
               v-for="price in tour.price_list" :key="price.id"
               class="relative-group">
                 <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
-                  {{ price.detail }} {{ price.name }} 
+                  {{ price.name }} {{ price.detail }}
                 </li>
               </div>
             </div>
@@ -291,60 +291,58 @@
               </a>
             </div>
             <div class="border border-slate-200 mt-10"></div>
-              <div class="md:overflow-y-auto md:pr-2 md:max-h-120 md:mt-12">
-    
-                <div v-if="otherTours.length > 0" class="col-span-1">
-                  <h2 class="text-xl font-bold text-slate-900 border-l-4 border-sky-500 pl-3 mb-6">
-                    Rekomendasi Paket Wisata Lainnya
-                  </h2>
-                  
-                  <div class="grid grid-cols-1 gap-6">
-                    <RouterLink 
-                      v-for="item in otherTours" 
-                      :key="item.slug"
-                      :to="`/packages/${currentCategory.slug}/${item.slug}`" 
-                      class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition-all group"
-                    >
-                      <div class="overflow-hidden aspect-6/3 w-full bg-gray-100">
-                        <img
-                          :src="item.image"
-                          :alt="item.name"
-                          class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                        />
-                      </div>
-            
-                      <div class="p-4 text-left flex-1 flex flex-col justify-between">
-                        <div>
-                          <h3 class="text-base font-bold text-sky-900 leading-snug group-hover:text-sky-500 transition-colors">
-                            {{ item.name }}
-                          </h3>
-            
-                          <div class="flex items-center gap-1 mt-1">
-                            <span class="text-yellow-400 text-sm">★★★★★</span>
-                            <span class="text-gray-500 text-xs font-medium">({{ item.rating || '5.0' }} rating)</span>
-                          </div>
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-sky-500 pl-3 mt-6 mb-6">
+              Rekomendasi Paket Wisata Lainnya
+            </h2>
+            <div class="md:overflow-y-auto md:pr-2 md:max-h-120 md:mt-6">
+              <div v-if="otherTours.length > 0" class="col-span-1">
+                <div class="grid grid-cols-1 gap-6">
+                  <RouterLink 
+                    v-for="item in otherTours" 
+                    :key="item.slug"
+                    :to="`/packages/${currentCategory.slug}/${item.slug}`" 
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition-all group"
+                  >
+                    <div class="overflow-hidden aspect-6/3 w-full bg-gray-100">
+                      <img
+                        :src="item.image"
+                        :alt="item.name"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                      />
+                    </div>
+          
+                    <div class="p-4 text-left flex-1 flex flex-col justify-between">
+                      <div>
+                        <h3 class="text-base font-bold text-sky-900 leading-snug group-hover:text-sky-500 transition-colors">
+                          {{ item.name }}
+                        </h3>
+          
+                        <div class="flex items-center gap-1 mt-1">
+                          <span class="text-yellow-400 text-sm">★★★★★</span>
+                          <span class="text-gray-500 text-xs font-medium">({{ item.rating || '5.0' }} rating)</span>
                         </div>
-            
-                        <div class="flex items-center justify-between mt-5 pt-3 border-t border-slate-100">
-                          <div class="flex items-baseline gap-0.5">
-                            <span class="text-lg font-extrabold text-gray-800">
-                              {{ item.price_list[0]?.name }}
-                            </span>
-                            <span class="text-gray-400 text-xs">/pax</span>
-                          </div>
-            
-                          <span class="text-xs font-bold text-gray-600 group-hover:text-sky-500 transition-colors flex items-center gap-1">
-                            Read More ➔
+                      </div>
+          
+                      <div class="flex items-center justify-between mt-5 pt-3 border-t border-slate-100">
+                        <div class="flex items-baseline gap-0.5">
+                          <span class="text-lg font-extrabold text-gray-800">
+                            {{ item.price_list[0]?.name }}
                           </span>
+                          <span class="text-gray-400 text-xs">/pax</span>
                         </div>
-            
+          
+                        <span class="text-xs font-bold text-gray-600 group-hover:text-sky-500 transition-colors flex items-center gap-1">
+                          Read More ➔
+                        </span>
                       </div>
-                    </RouterLink>
-                  </div>
-    
+          
+                    </div>
+                  </RouterLink>
                 </div>
-    
+  
               </div>
+  
+            </div>
           </div>
         </div>
 

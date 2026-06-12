@@ -13,7 +13,11 @@
         "name": "Kintamani - Ubud Tour",
         "rating": "5.0",
         "price_list": [
-          {"id": 1011, "name": "IDR 450k"}
+          {
+            "id": 1011, 
+            "name": "IDR 450k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/kintamani/hero-detail-kintamani-1.png",
         "images" : [
@@ -54,7 +58,11 @@
         "name": "Bedugul - Tanah Lot",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 500k"}
+          {
+            "id": 3071, 
+            "name": "IDR 500k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/bedugul/hero-detail-bedugul-1.png",
         "images" : [
@@ -91,7 +99,11 @@
         "name": "East Bali - Tour",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 600k"}
+          {
+            "id": 3071, 
+            "name": "IDR 600k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -129,7 +141,11 @@
         "name": "Water Sport - Uluwatu Temple Tour",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 670k"}
+          {
+            "id": 3071, 
+            "name": "IDR 670k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -177,7 +193,11 @@
         "name": "East - Tour",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 850k"}
+          {
+            "id": 3071, 
+            "name": "IDR 850k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -214,7 +234,11 @@
         "name": "West - Tour",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 750k"}
+          {
+            "id": 3071, 
+            "name": "IDR 750k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/nusa-penida/west/hero-nusa-penida-west-1.jpg",
          "images" : [
@@ -262,7 +286,11 @@
         "name": "Swing - Activity",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 300k"}
+          {
+            "id": 3071, 
+            "name": "IDR 300k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -306,7 +334,11 @@
         "name": "Jeep Sunrise - Activity",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 300k"}
+          {
+            "id": 3071, 
+            "name": "IDR 300k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -357,7 +389,11 @@
         "name": "ATV Ride & White Water Rafting Combo Adventure",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 1,100k"}
+          {
+            "id": 3071, 
+            "name": "IDR 1,100k",
+            "detail": "(minimum 2 pax)"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -425,12 +461,12 @@
           {
             "id": 4071, 
             "name": "IDR 400k",
-            "detail": "maximum 6 hours up to"
+            "detail": "(maximum 6 hours)"
           },
           {
             "id": 4072, 
             "name": "IDR 550k",
-            "detail": "maximum 10 hours up to"
+            "detail": "(maximum 10 hours)"
           }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
