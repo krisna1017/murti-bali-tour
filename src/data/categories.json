@@ -23,10 +23,18 @@
           "/detail/kintamani/hero-detail-kintamani-4.png",
           "/detail/kintamani/hero-detail-kintamani-5.png"
         ],
-        "description": "The Kintamani–Ubud Tour is a perfect journey to explore Bali’s natural beauty, cultural heritage, and iconic destinations in one unforgettable trip.",
-        "hightlight": "Start at the Silver & Gold Gallery and Batik Factory to explore Bali's finest crafts, then head up to Kintamani Volcanofor a stunning crater view. Purify yourself at the sacred Tirta Empul Holy Spring, feel the thrill at Tegalalang Rice Terrace & Swing, and wrap up the day soaking in the royal culture of Ubud Palace.",
-        "include": " English speaking driver, 1 bottle mineral water, Parking and entrance fee based on above programs",
-        "exclude": "Trevel insurance, Optionals tour, Any personal expenses, Gradtuities for tour dirver",
+        "description": "Explore the best of Bali in one day, starting with a visit to the Silver & Gold Gallery and Batik Factory to witness traditional Balinese craftsmanship up close. Marvel at the stunning views of Kintamani Volcano, then experience a spiritual cleansing at the sacred Tirta Empul Holy Spring. Continue to the iconic Tegalalang Rice Terrace for breathtaking views and a thrilling swing experience, before wrapping up the day at the historic Ubud Palace.",
+        "include_list": [
+          {"id": 1011, "name": "English speaking driver"},
+          {"id": 1012, "name": "1 bottle mineral water"},
+          {"id": 1013, "name": "Parking fees and entrance fee based on above programs"}
+        ],
+        "exclude_list": [
+          {"id": 1011, "name": "Travel insurance"},
+          {"id": 1012, "name": "Optionals tour"},
+          {"id": 1013, "name": "Personal expenses"},
+          {"id": 1014, "name": "Gradtuities for tour dirver"}
+        ],
         "destination_list":[
           {"id": 1011, "name": "Silver & Gold gallery"},
           {"id": 1012, "name": "Batik factory"},
@@ -34,6 +42,10 @@
           {"id": 1014, "name": "Tirta Empul holy spring"},
           {"id": 1015, "name": "Tegalalang Rice Terrace & Swing"},
           {"id": 1016, "name": "Ubud palace"}
+        ],
+        "terms_list": [
+          {"id": 1011, "name": "Standard tour terms apply."},
+          {"id": 1012, "name": " Price updates may occur during peak seasons."}
         ]
       },
       {
@@ -52,11 +64,101 @@
           "/detail/bedugul/hero-detail-bedugul-4.jpg",
           "/detail/bedugul/hero-detail-bedugul-5.jpg"
         ],
-        "description": "Jelajahi sisi timur Bali yang eksotis termasuk Pura Lempuyang dan Tirta Gangga.",
+        "description": "Discover the natural and spiritual beauty of Bali, starting with the enchanting Leke-Leke Waterfall hidden within a lush tropical forest. Continue to the serene Ulun Danu Floating Temple, majestically set on the shores of Lake Beratan, then end the day at the world-famous Tanah Lot Temple a breathtaking sea temple perched on a rocky cliff at sunset.",
         "destination_list":[
           {"id": 1011, "name": "Leke-leke Waterfall"},
           {"id": 1012, "name": "Ulun Danu Floating Temple"},
           {"id": 1013, "name": "Tanah Lot Temple"}
+        ],
+        "include_list": [
+          {"id": 1011, "name": "English speaking driver"},
+          {"id": 1012, "name": "1 bottle mineral water"},
+          {"id": 1013, "name": "Parking fees and entrance fee based on above programs"}
+        ],
+        "exclude_list": [
+          {"id": 1011, "name": "Travel insurance"},
+          {"id": 1012, "name": "Optionals tour"},
+          {"id": 1013, "name": "Personal expenses"},
+          {"id": 1014, "name": "Gradtuities for tour dirver"}
+        ],
+        "terms_list": [
+          {"id": 1011, "name": "Minimum booking of 2 pax required."}
+        ]
+      },
+      {
+        "id": 103,
+        "slug": "east-bali-tour",
+        "name": "East Bali - Tour",
+        "rating": "5.0",
+        "price_list": [
+          {"id": 3071, "name": "IDR 600k"}
+        ],
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Uncover the mystical and natural wonders of East Bali, beginning with the iconic Lempuyang Temple — famously known as the 'Gates of Heaven' with Mount Agung as its backdrop. Sweeten the journey with a stop at Layangan Sweetbefore marveling at the royal beauty of Tirta Gangga Water Palace, an elegant garden and water complex steeped in Balinese history. End the day at the magical Tukad Cepung Waterfall, a hidden gem tucked inside a dramatic cave canyon.",
+        "destination_list":[
+          {"id": 1011, "name": "Lempuyang Temple"},
+          {"id": 1012, "name": "Layangan Sweet"},
+          {"id": 1013, "name": "Tirta Gangga Water Palace"},
+          {"id": 1014, "name": "Tukad Cepung Waterfall"}
+        ],
+        "include_list": [
+          {"id": 1011, "name": "English speaking driver"},
+          {"id": 1012, "name": "1 bottle mineral water"},
+          {"id": 1013, "name": "Parking fees and entrance fee based on above programs"}
+        ],
+        "exclude_list": [
+          {"id": 1011, "name": "Travel insurance"},
+          {"id": 1012, "name": "Optionals tour"},
+          {"id": 1013, "name": "Personal expenses"},
+          {"id": 1014, "name": "Gradtuities for tour dirver"}
+        ],
+        "terms_list": [
+          {"id": 1011, "name": "Bookings must be made in advance."}
+        ]
+      },
+      {
+        "id": 104,
+        "slug": "water-sport-uluwatu-temple",
+        "name": "Water Sport - Uluwatu Temple Tour",
+        "rating": "5.0",
+        "price_list": [
+          {"id": 3071, "name": "IDR 670k"}
+        ],
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Kick off the day with an exhilarating Banana Boat ride on the crystal-clear waters, then unwind on the stunning shores of Pandawa Beach and Padang-Padang Beach two of Bali's most breathtaking coastal gems. As the sun sets, head up to the clifftop Uluwatu Temple for a mesmerizing Kecak & Fire Dance Performance against a spectacular ocean backdrop.",
+        "destination_list":[
+          {"id": 1011, "name": "1x Banana Boat ride"},
+          {"id": 1012, "name": "Pandawa Beach"},
+          {"id": 1013, "name": "Padang-Padang Beach"},
+          {"id": 1014, "name": "Uluwatu Temple with Kecak & Fire Dance Performance"}
+        ],
+        "include_list": [
+          {"id": 1011, "name": "English speaking driver"},
+          {"id": 1012, "name": "1 bottle mineral water"},
+          {"id": 1013, "name": "Parking fees and entrance fee based on above programs"}
+        ],
+        "exclude_list": [
+          {"id": 1011, "name": "Travel insurance"},
+          {"id": 1012, "name": "Optionals tour"},
+          {"id": 1013, "name": "Personal expenses"},
+          {"id": 1014, "name": "Gradtuities for tour dirver"}
+        ],
+        "terms_list": [
+          {"id": 1011, "name": "Schedule subject to weather conditions for water sports."}
         ]
       }
     ]
@@ -75,7 +177,7 @@
         "name": "East - Tour",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 300k"}
+          {"id": 3071, "name": "IDR 850k"}
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -85,7 +187,26 @@
           "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
           "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
         ],
-        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan."
+        "description": "Discover the stunning eastern side of Nusa Penida, starting with the breathtaking Atuh Beach — a secluded white sand beach framed by dramatic cliffs and crystal-clear waters. Continue to the equally spectacular Diamond Beach, where powdery white sand meets towering limestone cliffs for an unforgettable view. Cap off the adventure at the famous Tree House (Rumah Pohon Molenteng), a photogenic treetop hideaway offering panoramic views of the island's rugged coastline",
+        "destination_list":[
+          {"id": 1011, "name": "Atuh Beach"},
+          {"id": 1012, "name": "Diamond Beach"},
+          {"id": 1013, "name": "Tree House (Rumah Pohon Molenteng)"}
+        ],
+        "include_list": [
+          {"id": 1011, "name": "Round-trip Fast Boat tickets"},
+          {"id": 1012, "name": "Island transport in Nusa Penida"},
+          {"id": 1013, "name": "English-speaking driver/guide"},
+          {"id": 1013, "name": "Entrance fees"},
+          {"id": 1013, "name": "Mineral water"}
+        ],
+        "exclude_list": [
+          {"id": 1011, "name": "Personal expenses"},
+          {"id": 1012, "name": "Gratuities for the driver"}
+        ],
+        "terms_list": [
+          {"id": 1011, "name": "Safe footwear is recommended due to steep stairs at Diamond Beach."}
+        ]
       },
       {
         "id": 202,
@@ -93,7 +214,7 @@
         "name": "West - Tour",
         "rating": "5.0",
         "price_list": [
-          {"id": 3071, "name": "IDR 300k"}
+          {"id": 3071, "name": "IDR 750k"}
         ],
         "image": "/detail/nusa-penida/west/hero-nusa-penida-west-1.jpg",
          "images" : [
@@ -103,13 +224,26 @@
           "/detail/nusa-penida/west/hero-nusa-penida-west-4.jpeg",
           "/detail/nusa-penida/west/hero-nusa-penida-west-5.jpg"
         ],
-        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan.",
-        "highlight_list": [
-          {"id": 3061, "name": "Mount Batur sunrise experience by 4WD Jeep"},
-          {"id": 3062, "name": "Explore the dramatic black lava and black sand terrain"},
-          {"id": 3061, "name": "No hiking required – perfect for all ages"},
-          {"id": 3061, "name": "Led by experienced jeep driver-guide"},
-          {"id": 3061, "name": "Local breakfast included"}
+        "description": "Experience the raw beauty of Western Nusa Penida, starting with the iconic Kelingking Beach a dramatic T-Rex shaped cliff with stunning turquoise waters below. Continue to the natural wonder of Broken Beach, a breathtaking coastal arch carved by the ocean, then discover the mesmerizing natural infinity pool of Angel's Billabong right at the edge of the sea. End the day at the pristine and serene Crystal Bay, perfect for soaking in Bali's untouched island scenery.",
+        "destination_list":[
+          {"id": 1011, "name": "Kelingking Beach"},
+          {"id": 1012, "name": "Broken Beach"},
+          {"id": 1013, "name": "Angel's Billabong"},
+          {"id": 1014, "name": "Crystal Bay"}
+        ],
+        "include_list": [
+          {"id": 1011, "name": "Round-trip Fast Boat tickets"},
+          {"id": 1012, "name": "Island transport in Nusa Penida"},
+          {"id": 1013, "name": "English-speaking driver/guide"},
+          {"id": 1013, "name": "Entrance fees"},
+          {"id": 1013, "name": "Mineral water"}
+        ],
+        "exclude_list": [
+          {"id": 1011, "name": "Personal expenses"},
+          {"id": 1012, "name": "Gratuities for the driver"}
+        ],
+        "terms_list": [
+          {"id": 1011, "name": "Please arrive at the harbor on time for the fast boat departure"}
         ]
       }
     ]
@@ -138,22 +272,16 @@
           "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
           "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
         ],
-        "description": "Perjalanan sehari penuh menjelajahi pemandangan pantai lembongan sampai pulau menjangan.",
-        "highlight_list": [
-          {"id": 3061, "name": "Mount Batur sunrise experience by 4WD Jeep"},
-          {"id": 3062, "name": "Explore the dramatic black lava and black sand terrain"},
-          {"id": 3061, "name": "No hiking required – perfect for all ages"},
-          {"id": 3061, "name": "Led by experienced jeep driver-guide"},
-          {"id": 3061, "name": "Local breakfast included"}
-        ],
+        "description": "Soar above Bali's lush tropical greenery at one of the island's most iconic photo spots. The package includes four types of swings — Single Swing, Extreme Swing, Couple Swing, and Bed Swing — plus a Bird Nest photo spot.",
         "include_list": [
-          {"id": 3011, "name": "single swing"},
-          {"id": 3012, "name": "extreme swing"},
-          {"id": 3013, "name": "couple swing"},
-          {"id": 3014, "name": "bed swing"}
+          {"id": 3011, "name": "Single swing"},
+          {"id": 3012, "name": "Extreme swing"},
+          {"id": 3013, "name": "Couple swing"},
+          {"id": 3014, "name": "Bed swing"},
+          {"id": 3015, "name": "Bird Nest photo spot"}
         ],
         "exclude_list": [
-          {"id": 3021, "name": "Hotel transfer"},
+          {"id": 3021, "name": "Hotel transfer (pick-up & drop-off)"},
           {"id": 3022, "name": "Personal expenses"}
         ],
         "what_to_bring_list": [
@@ -222,6 +350,61 @@
           {"id": 3054, "name": "Activity is weather-dependent"},
           {"id": 3055, "name": "Not suitable for infants or guests with heart conditions"}
         ]
+      },
+      {
+        "id": 303,
+        "slug": "atv-ride-white-water-rafting",
+        "name": "ATV Ride & White Water Rafting Combo Adventure",
+        "rating": "5.0",
+        "price_list": [
+          {"id": 3071, "name": "IDR 1,100k"}
+        ],
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Experience the ultimate Bali adventure by combining an exciting ATV jungle ride with a thrilling white water rafting journey. Perfect for adrenaline seekers who want to explore Bali’s wild side in one day!",
+        "highlight_list": [
+          {"id": 3061, "name": "1.5-hour ATV off-road adventure through jungle and rice fields"},
+          {"id": 3062, "name": "2-hour rafting on a scenic river with fun rapids"},
+          {"id": 3061, "name": "Stunning natural landscapes"},
+          {"id": 3061, "name": "Safe for beginners and all skill levels"},
+          {"id": 3061, "name": "Led by professional and certified guides"}
+        ],
+        "include_list": [
+          {"id": 3021, "name": "ATV ride (single use)"},
+          {"id": 3022, "name": "White water rafting (shared boat)"},
+          {"id": 3023, "name": "All safety equipment (helmet, boots, life jacket, paddle)"},
+          {"id": 3024, "name": "Professional instructors and river guide"},
+          {"id": 3025, "name": "Locker, shower, and changing facilities"},
+          {"id": 3026, "name": "Local lunch with welcome drink"},
+          {"id": 3027, "name": "Insurance coverage"}
+        ],
+        "exclude_list": [
+          {"id": 3031, "name": "Hotel transfer"},
+          {"id": 3032, "name": "Personal expenses"}
+        ],
+        "what_to_bring_list": [
+          {"id": 3041, "name": "Change of clothes (you will get wet)"},
+          {"id": 3042, "name": "Swimwear or quick-dry outfit"},
+          {"id": 3043, "name": "Comfortable shoes or sandals with strap"},
+          {"id": 3044, "name": "Small waterproof bag or dry bag"},
+          {"id": 3045, "name": "Towel and toiletries"},
+          {"id": 3046, "name": "Sunscreen and sunglasses"},
+          {"id": 3047, "name": "Cash for personal expenses or optional photo/video"},
+          {"id": 3048, "name": "Action camera or waterproof phone case (optional)"}
+        ],
+        "terms_list": [
+          {"id": 3051, "name": "Minimum 2 participants per booking"},
+          {"id": 3052, "name": "Not recommended for pregnant women or guests with serious medical conditions"},
+          {"id": 3053, "name": "Age requirement: 10–65 years old"},
+          {"id": 3054, "name": "Guests must be in good physical condition"},
+          {"id": 3055, "name": "Activity is weather-dependent and may be rescheduled due to safety"}
+        ]
       }
     ]
   },
@@ -231,6 +414,87 @@
     "slug": "car-charter",
     "subtitle": "Private & flexible travel.",
     "description": "Private & flexible travel.",
-    "image": "../../category/hero-category-4.jpg"
+    "image": "../../category/hero-category-4.jpg",
+    "packages_list":[
+      {
+        "id": 401,
+        "slug": "vehicle-driver",
+        "name": "Vehicle - Driver",
+        "rating": "5.0",
+        "price_list": [
+          {"id": 4071, "name": "IDR 400k up to 6 hours"},
+          {"id": 4072, "name": "IDR 550k up to 10 hours"}
+        ],
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Explore Bali at your own pace with a private car charter, giving you the freedom to visit any destination on your own schedule. Choose the duration that suits your itinerary — up to 6 hours at IDR 400,000/car or up to 10 hours at IDR 550,000/car, both inclusive of a comfortable private car, English-speaking driver, fuel, and mineral water.",
+        "include_list": [
+          {"id": 4011, "name": "Comfortable private car"},
+          {"id": 4012, "name": "English-speaking driver"},
+          {"id": 4013, "name": "fuel (petrol)"},
+          {"id": 4014, "name": "1 bottle of mineral water"}
+        ],
+        "exclude_list": [
+          {"id": 4021, "name": "Parking fees"},
+          {"id": 4022, "name": "Entrance tickets to attractions"},
+          {"id": 4022, "name": "Travel insurance"},
+          {"id": 4022, "name": "Personal expenses"},
+          {"id": 4022, "name": "Driver gratuities"}
+        ],
+        "terms_list": [
+          {"id": 4051, "name": "Minimum 2 participants per booking"},
+          {"id": 4052, "name": "Pick-up available from Ubud, Kintamani, or nearby areas with additional cost"},
+          {"id": 4053, "name": "Departure time around 3:30 AM (depending on hotel location)"},
+          {"id": 4054, "name": "Activity is weather-dependent"},
+          {"id": 4055, "name": "Not suitable for infants or guests with heart conditions"}
+        ]
+      },
+      {
+        "id": 402,
+        "slug": "airports-transfer",
+        "name": "Airport - Transfer",
+        "rating": "5.0",
+        "price_list": [
+          {"id": 4071, "name": "Airport ⇄ Kuta / Seminyak: IDR 200k"},
+          {"id": 4071, "name": "Airport ⇄ Nusa Dua: IDR 300k"},
+          {"id": 4071, "name": "Airport ⇄ Ubud: IDR 350k"}
+        ],
+        "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+         "images" : [
+          "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-2.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-3.jpeg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
+          "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
+        ],
+        "description": "Ravel to and from Ngurah Rai International Airport with ease using our private airport transfer service, available for both pick-up and drop-off. Rates vary by destination — IDR 200,000 to/from Kuta or Seminyak, IDR 300,000 to/from Nusa Dua, and IDR 350,000 to/from Ubud — making it a convenient and hassle-free start or end to your Bali getaway.",
+        "include_list": [
+          {"id": 4011, "name": "Comfortable private car"},
+          {"id": 4012, "name": "English-speaking driver"},
+          {"id": 4013, "name": "fuel (petrol)"},
+          {"id": 4014, "name": "1 bottle of mineral water"}
+        ],
+        "exclude_list": [
+          {"id": 4021, "name": "Parking fees"},
+          {"id": 4022, "name": "Entrance tickets to attractions"},
+          {"id": 4022, "name": "Travel insurance"},
+          {"id": 4022, "name": "Personal expenses"},
+          {"id": 4022, "name": "Driver gratuities"}
+        ],
+        "terms_list": [
+          {"id": 4051, "name": "Minimum 2 participants per booking"},
+          {"id": 4052, "name": "Pick-up available from Ubud, Kintamani, or nearby areas with additional cost"},
+          {"id": 4053, "name": "Departure time around 3:30 AM (depending on hotel location)"},
+          {"id": 4054, "name": "Activity is weather-dependent"},
+          {"id": 4055, "name": "Not suitable for infants or guests with heart conditions"}
+        ]
+      }
+    ]
   }
 ]
