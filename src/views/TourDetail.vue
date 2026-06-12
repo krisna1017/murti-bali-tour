@@ -204,7 +204,7 @@
               v-for="price in tour.price_list" :key="price.id"
               class="relative-group">
                 <li class="text-slate-600 text-sm md:text-base leading-relaxed ml-7">
-                  {{ price.name }}
+                  {{ price.detail }} {{ price.name }} 
                 </li>
               </div>
             </div>
@@ -263,36 +263,37 @@
           </div>
 
           <div class="lg:col-span-4 mt-6 self-start">
-              <div class="md:overflow-y-auto md:pr-2 md:max-h-200">
-                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-md shadow-slate-300">
-                  <div class="flex items-baseline gap-2 mt-1 mb-6">
-                    <span class="text-3xl md:text-2xl font-thin">From</span>
-                    <span class="text-3xl md:text-2xl font-regular text-sky-500">
-                      {{ tour.price_list[0]?.name }}
-                    </span>
-                  </div>
-      
-                  <div class="my-4 space-y-3 text-xs text-black">
-                    <div class="flex items-center gap-2">
-                      <i class="pi pi-calendar text-xl"></i>
-                      <span class="text-md">Book now pay later</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <i class="pi pi-thumbs-up text-xl"></i>
-                      <span class="text-md">The best services guarantee</span>
-                    </div>
-                  </div>
-      
-                  <a 
-                    :href="whatsappUrl"
-                    target="_blank"
-                    class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3.5 px-4 rounded-2xl transition-all shadow-md shadow-emerald-500/20 text-sm flex items-center justify-center gap-2 cursor-pointer mt-6"
-                  >
-                    Book Right Now !
-                  </a>
+            <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-md shadow-slate-300">
+              <div class="flex items-baseline gap-2 mt-1 mb-6">
+                <span class="text-3xl md:text-2xl font-thin">From</span>
+                <span class="text-3xl md:text-2xl font-regular text-sky-500">
+                  {{ tour.price_list[0]?.name }}
+                </span>
+              </div>
+  
+              <div class="my-4 space-y-3 text-xs text-black">
+                <div class="flex items-center gap-2">
+                  <i class="pi pi-calendar text-xl"></i>
+                  <span class="text-md">Book now pay later</span>
                 </div>
+                <div class="flex items-center gap-2">
+                  <i class="pi pi-thumbs-up text-xl"></i>
+                  <span class="text-md">The best services guarantee</span>
+                </div>
+              </div>
+  
+              <a 
+                :href="whatsappUrl"
+                target="_blank"
+                class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3.5 px-4 rounded-2xl transition-all shadow-md shadow-emerald-500/20 text-sm flex items-center justify-center gap-2 cursor-pointer mt-6"
+              >
+                Book Right Now !
+              </a>
+            </div>
+            <div class="border border-slate-200 mt-10"></div>
+              <div class="md:overflow-y-auto md:pr-2 md:max-h-120 md:mt-12">
     
-                <div v-if="otherTours.length > 0" class="col-span-1 mt-12 border-t border-slate-200 pt-10">
+                <div v-if="otherTours.length > 0" class="col-span-1">
                   <h2 class="text-xl font-bold text-slate-900 border-l-4 border-sky-500 pl-3 mb-6">
                     Rekomendasi Paket Wisata Lainnya
                   </h2>

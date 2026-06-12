@@ -422,8 +422,16 @@
         "name": "Vehicle - Driver",
         "rating": "5.0",
         "price_list": [
-          {"id": 4071, "name": "IDR 400k up to 6 hours"},
-          {"id": 4072, "name": "IDR 550k up to 10 hours"}
+          {
+            "id": 4071, 
+            "name": "IDR 400k",
+            "detail": "maximum 6 hours up to"
+          },
+          {
+            "id": 4072, 
+            "name": "IDR 550k",
+            "detail": "maximum 10 hours up to"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -433,7 +441,7 @@
           "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
           "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
         ],
-        "description": "Explore Bali at your own pace with a private car charter, giving you the freedom to visit any destination on your own schedule. Choose the duration that suits your itinerary — up to 6 hours at IDR 400,000/car or up to 10 hours at IDR 550,000/car, both inclusive of a comfortable private car, English-speaking driver, fuel, and mineral water.",
+        "description": "Explore Bali at your own pace with a private car charter, giving you the freedom to visit any destination on your own schedule. Choose the duration that suits your itinerary up to 6 hours at IDR 400,000/car or up to 10 hours at IDR 550,000/car, both inclusive of a comfortable private car, English-speaking driver, fuel, and mineral water.",
         "include_list": [
           {"id": 4011, "name": "Comfortable private car"},
           {"id": 4012, "name": "English-speaking driver"},
@@ -461,9 +469,21 @@
         "name": "Airport - Transfer",
         "rating": "5.0",
         "price_list": [
-          {"id": 4071, "name": "Airport ⇄ Kuta / Seminyak: IDR 200k"},
-          {"id": 4071, "name": "Airport ⇄ Nusa Dua: IDR 300k"},
-          {"id": 4071, "name": "Airport ⇄ Ubud: IDR 350k"}
+          {
+            "id": 4071, 
+            "name": "IDR 200k",
+            "detail": "Airport ⇄ Kuta / Seminyak:"
+          },
+          {
+            "id": 4072, 
+            "name": "IDR 300k",
+            "detail": "Airport ⇄ Nusa Dua:"
+          },
+          {
+            "id": 4073, 
+            "name": "IDR 350k",
+            "detail": "Airport ⇄ Ubud:"
+          }
         ],
         "image": "/detail/nusa-penida/east/hero-nusa-penida-east-1.png",
          "images" : [
@@ -473,7 +493,7 @@
           "/detail/nusa-penida/east/hero-nusa-penida-east-4.jpg",
           "/detail/nusa-penida/east/hero-nusa-penida-east-5.jpeg"
         ],
-        "description": "Ravel to and from Ngurah Rai International Airport with ease using our private airport transfer service, available for both pick-up and drop-off. Rates vary by destination — IDR 200,000 to/from Kuta or Seminyak, IDR 300,000 to/from Nusa Dua, and IDR 350,000 to/from Ubud — making it a convenient and hassle-free start or end to your Bali getaway.",
+        "description": "Ravel to and from Ngurah Rai International Airport with ease using our private airport transfer service, available for both pick-up and drop-off. Rates vary by destination IDR 200,000 to/from Kuta or Seminyak, IDR 300,000 to/from Nusa Dua, and IDR 350,000 to/from Ubud making it a convenient and hassle-free start or end to your Bali getaway.",
         "include_list": [
           {"id": 4011, "name": "Comfortable private car"},
           {"id": 4012, "name": "English-speaking driver"},
