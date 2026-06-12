@@ -159,7 +159,7 @@ const gmailUrl =
 
 
   
-const nomorWa = '6281234567890'
+const nomorWa = '628970254743'
 const teksPesan =
   'Halo Murti Bali Tour, saya ingin bertanya mengenai paket wisata Bali.'
 

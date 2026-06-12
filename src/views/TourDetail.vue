@@ -440,7 +440,7 @@ const otherTours = computed(() => {
 const whatsappUrl = computed(() => {
   if (!tour.value) return '#'
   
-  const nomorWa = '6281234567890' // ➔ GANTI menggunakan nomor WhatsApp asli bisnismu
+  const nomorWa = '628970254743' // ➔ GANTI menggunakan nomor WhatsApp asli bisnismu
   const teksPesan = `Halo Murti Bali Tour, saya tertarik dan ingin memesan paket wisata berikut:\n\n*Nama Paket:* ${tour.value.name}\n*Harga:* ${tour.value.price_list[0]?.name}/pax\n\nMohon informasi ketersediaan jadwalnya, terima kasih.`
   
   return `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodeURIComponent(teksPesan)}`
