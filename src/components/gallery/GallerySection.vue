@@ -8,23 +8,35 @@
         Recent Gallery
       </h2>
   
-      <div class="grid grid-cols-12 gap-3 auto-rows-[120px] sm:auto-rows-[160px] md:auto-rows-[180px]">
-        <div 
-          v-for="(item, index) in paginatedGallery" 
-          :key="index"
+      <div
+        v-for="page in totalPages"
+        :key="page"
+        v-show="currentPage === page"
+        class="grid grid-cols-12 gap-3 auto-rows-[120px] sm:auto-rows-[160px] md:auto-rows-[180px]"
+      >
+        <div
+          v-if="loadedPages.includes(page)"
+          v-for="(item, index) in galleryItems.slice(
+            (page - 1) * itemsPerPage,
+            page * itemsPerPage
+          )"
+          :key="`${page}-${index}`"
           :class="item.gridClass"
           class="overflow-hidden rounded-lg cursor-pointer group relative"
-          @click="openLightbox(((currentPage - 1) * itemsPerPage) + index)"
+          @click="openLightbox(((page - 1) * itemsPerPage) + index)"
         >
-          <img 
-            :src="item.src" 
-            :alt="item.alt" 
-            loading="lazy"
+          <img
+            :src="item.src"
+            :alt="item.alt"
+            :loading="index < 4 ? 'eager' : 'lazy'"
             decoding="async"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
           />
+
           <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <span class="text-white bg-black/40 p-2 rounded-full text-sm">zoom</span>
+            <span class="text-white bg-black/40 p-2 rounded-full text-sm">
+              zoom
+            </span>
           </div>
         </div>
       </div>
@@ -168,22 +180,14 @@ const totalPages = computed(() => {
 })
 
 // data gallery sesuai halaman aktif
-const paginatedGallery = computed(() => {
-  const start = (currentPage.value - 1) * itemsPerPage
-  const end = start + itemsPerPage
+const loadedPages = ref([1])
 
-  return galleryItems.value.slice(start, end)
-})
-
-// pindah halaman
 const goToPage = (page) => {
   currentPage.value = page
 
-  // // scroll halus ke atas gallery
-  // window.scrollTo({
-  //   top: 0,
-  //   behavior: 'smooth'
-  // })
+  if (!loadedPages.value.includes(page)) {
+    loadedPages.value.push(page)
+  }
 }
 </script>
 

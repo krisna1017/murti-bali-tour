@@ -19,7 +19,7 @@
           <img 
             :src="item.src" 
             :alt="item.alt" 
-            loading="lazy"
+            :loading="index < 4 ? 'eager' : 'lazy'"
             decoding="async"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
           />
