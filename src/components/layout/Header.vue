@@ -103,9 +103,12 @@
           </div>
 
           <div class="hidden md:flex">
-            <button class="py-0 px-6 bg-white hover:bg-sky-50 text-sky-700 hover:text-sky-700 rounded-3xl text-sm cursor-pointer font-regular">
+            <a 
+            :href="whatsappUrl"
+            target="_blank"
+            class="py-3 px-6 bg-white hover:bg-sky-50 text-sky-700 hover:text-sky-700 rounded-3xl text-sm cursor-pointer font-regular flex items-center justify-center">
               Book Now
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -177,7 +180,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watchEffect } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watchEffect } from 'vue'
 import categoriesData from '../../data/categories.json' // Menggunakan alias @ yang sudah diperbaiki
 
 import {
@@ -245,5 +248,14 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll),
   document.body.classList.remove('overflow-hidden')
+})
+
+// 3. Membuat tautan otomatis template pesan pesanan ke WhatsApp admin
+const whatsappUrl = computed(() => {
+  
+  const nomorWa = '628970254743' // ➔ GANTI menggunakan nomor WhatsApp asli bisnismu
+  const teksPesan = `Halo Murti Bali Tour, saya tertarik dan ingin memesan paket wisata`
+  
+  return `https://api.whatsapp.com/send?phone=${nomorWa}&text=${encodeURIComponent(teksPesan)}`
 })
 </script>

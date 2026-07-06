@@ -1,8 +1,16 @@
 <template>
-  <section class="py-16 bg-white font-poppins">
+  <section 
+  class="py-16 bg-white font-poppins scroll-mt-16" 
+  id="tourSection"
+  >
     
     <!-- Heading -->
-    <div class="text-center mb-14">
+    <div 
+    class="text-center mb-14"
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    data-aos-delay="30"
+    >
       <p class="text-gray-600 text-sm">
         Wonderful Place For You
       </p>
@@ -13,7 +21,12 @@
     </div>
 
     <!-- Category Grid -->
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div 
+    class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4"
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    data-aos-delay="60"
+    >
 
       <!-- Item -->
       <RouterLink

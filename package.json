@@ -13,6 +13,8 @@
     "@heroicons/vue": "^2.2.0",
     "@supabase/supabase-js": "^2.108.1",
     "@tailwindcss/vite": "^4.3.0",
+    "@vueuse/head": "^2.0.0",
+    "aos": "^2.3.4",
     "primeicons": "^7.0.0",
     "tailwindcss": "^4.3.0",
     "vue": "^3.5.34",

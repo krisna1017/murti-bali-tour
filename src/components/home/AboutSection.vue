@@ -1,14 +1,25 @@
 <template>
-  <section class="py-20 bg-white font-poppins">
+  <section 
+  class="py-20 bg-white font-poppins"
+  >
 
     <!-- Heading -->
-    <div class="max-w-4xl mx-auto text-center px-4">
+    <div 
+    class="max-w-4xl mx-auto text-center px-4"
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay="30"
+    >
 
-      <p class="text-gray-500 text-sm">
+      <p 
+      class="text-gray-500 text-sm"
+      >
         Get To Know About
       </p>
 
-      <h2 class="text-3xl md:text-4xl font-bold text-sky-900 font-sans">
+      <h2 
+      class="text-3xl md:text-4xl font-bold text-sky-900 font-sans"
+      >
         Murti Bali Tour
       </h2>
 
@@ -24,7 +35,12 @@
     </div>
 
     <!-- Feature Grid -->
-    <div class="max-w-6xl mx-auto px-4 mt-14 grid grid-cols-2 md:grid-cols-4 gap-2">
+    <div 
+    class="max-w-6xl mx-auto px-4 mt-14 grid grid-cols-2 md:grid-cols-4 gap-2"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="50"
+    >
 
       <!-- Card -->
       <div

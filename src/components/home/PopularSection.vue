@@ -1,8 +1,15 @@
 <template>
-  <section class="py-16 bg-sky-100 font-poppins">
+  <section 
+  class="py-16 bg-sky-100 font-poppins"
+  >
     
     <!-- Heading -->
-    <div class="text-center mb-14 px-4">
+    <div 
+    class="text-center mb-14 px-4"
+    data-aos="fade-right"
+    data-aos-duration="1000"
+    data-aos-delay="30"
+    >
       <p class="text-gray-500 text-sm">
         Best Tour For You
       </p>
@@ -19,7 +26,11 @@
 
     <!-- Card Grid -->
     <div 
-    class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+    class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"
+    data-aos="fade-right"
+    data-aos-duration="1000"
+    data-aos-delay="60"
+    >
 
     <!-- Card -->
     <RouterLink

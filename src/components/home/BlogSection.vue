@@ -1,7 +1,12 @@
 <template>
   <div class="min-h-screen bg-linear-to-b from-sky-100 via-[#ffffff] to-white px-4 py-12 font-poppins">
     
-    <div class="text-center mb-10">
+    <div 
+    class="text-center mb-10"
+    data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    >
       <p class="text-gray-500 font-medium text-[12px] tracking-wide">
         Blog & Article
       </p>
@@ -10,7 +15,12 @@
       </h2>
     </div>
 
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
+    <div 
+    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4"
+    data-aos="fade-left"
+    data-aos-offset="500"
+    data-aos-easing="ease-in-sine"
+    >
       
         
         <RouterLink
