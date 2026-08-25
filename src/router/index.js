@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Gallery from '../views/Gallery.vue'
-import Blog from '../views/Blog.vue'
-import CategoryDetail from '../views/CategoryDetail.vue'
-import TourDetail from '../views/TourDetail.vue'
-import BlogDetail from '../views/BlogDetail.vue'
+const Home = () => import('../views/Home.vue')
+const About = () => import('../views/About.vue')
+const Gallery = () => import('../views/Gallery.vue')
+const Blog = () => import('../views/Blog.vue')
+const CategoryDetail = () => import('../views/CategoryDetail.vue')
+const TourDetail = () => import('../views/TourDetail.vue')
+const BlogDetail = () => import('../views/BlogDetail.vue')
 
 // import CategoryDetailView from '../views/CategoryDetail.vue';
 

@@ -23,6 +23,7 @@
             <img
               :src="tourImages[currentImage]"
               alt=""
+              decoding="async"
               class="w-full h-65 object-cover transition-all duration-300"
             />
           </div>
@@ -65,6 +66,7 @@
             <img 
               :src="tour.images[0]" 
               alt="" 
+              decoding="async"
               class="w-full h-full object-cover hover:scale-105 transition duration-300"
             >
           </div>
@@ -76,6 +78,8 @@
             <img 
               :src="tour.images[1]" 
               alt="" 
+              loading="lazy"
+              decoding="async"
               class="w-full h-full object-cover hover:scale-105 transition duration-300"
             >
           </div>
@@ -87,6 +91,8 @@
             <img 
               :src="tour.images[2]" 
               alt="" 
+              loading="lazy"
+              decoding="async"
               class="w-full h-full object-cover hover:scale-105 transition duration-300"
             >
           </div>
@@ -98,6 +104,8 @@
             <img 
               :src="tour.images[3]" 
               alt="" 
+              loading="lazy"
+              decoding="async"
               class="w-full h-full object-cover hover:scale-105 transition duration-300"
             >
           </div>
@@ -109,6 +117,8 @@
             <img 
               :src="tour.images[4]" 
               alt="" 
+              loading="lazy"
+              decoding="async"
               class="w-full h-full object-cover hover:scale-105 transition duration-300"
             >
           </div>
@@ -140,6 +150,7 @@
           <img
             :src="tourImages[currentImage]"
             alt=""
+            decoding="async"
             class="max-w-6xl max-h-[85vh] object-contain rounded-xl"
           />
 
@@ -307,6 +318,8 @@
                       <img
                         :src="item.image"
                         :alt="item.name"
+                        loading="lazy"
+                        decoding="async"
                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                       />
                     </div>

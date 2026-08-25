@@ -37,6 +37,8 @@
         <img
           :src="feature.image"
           :alt="feature.title"
+          loading="lazy"
+          decoding="async"
           class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500"
         />
 

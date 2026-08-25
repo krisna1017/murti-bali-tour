@@ -14,6 +14,7 @@
             class="h-12 w-auto"
             src="/logo-mobile.png"
             alt="Your Company"
+            decoding="async"
           />
           <p class="mt-2 md:mt-4 text-gray-700 text-sm leading-relaxed max-w-md">
             Bali Murti Tour creates unforgettable Bali journeys with authentic

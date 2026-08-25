@@ -29,6 +29,7 @@
               class="h-12 w-auto"
               src="/logo.png"
               alt="Your Company"
+              decoding="async"
             />
           </div>
 

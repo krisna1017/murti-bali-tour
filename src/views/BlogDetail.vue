@@ -22,6 +22,7 @@
             <img
               :src="blog.image"
               :alt="blog.title"
+              decoding="async"
               class="w-full h-62.5 md:h-125 object-cover"
             />
           </div>
@@ -97,6 +98,8 @@
               <img
                 :src="item.image"
                 :alt="item.title"
+                loading="lazy"
+                decoding="async"
                 class="w-28 h-24 object-cover rounded-xl"
               />
 

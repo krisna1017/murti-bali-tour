@@ -14,9 +14,14 @@ app.use(router)
 router.isReady().then(() => {
   app.mount('#app')
 
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
   AOS.init({
-    duration: 800,
-    once: false,
-    mirror: true
+    duration: 600,
+    once: true,
+    mirror: false,
+    disable: prefersReduced,
+    throttleDelay: 150,
+    debounceDelay: 50
   })
 })

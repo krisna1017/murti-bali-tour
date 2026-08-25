@@ -45,6 +45,8 @@
         <img
           :src="item.image"
           :alt="item.title"
+          loading="lazy"
+          decoding="async"
           class="w-full h-34 object-cover group-hover:scale-110 transition duration-500"
         />
       </div>
